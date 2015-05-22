@@ -1,0 +1,1 @@
+{"type":"RX_configuration_backup","firmware_version":900,"configurator_version":"0.53","obj":{"rx_type":5,"pinMapping":["32","34","33","35",null,"43","36","37",255,255,255,255,255],"flags":2,"RSSIpwm":7,"beacon_frequency":462662500,"beacon_deadtime":30,"beacon_interval":10,"minsync":3000,"failsafe_delay":10,"ppmStopDelay":0,"pwmStopDelay":10}}

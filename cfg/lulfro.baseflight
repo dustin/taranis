@@ -1,6 +1,6 @@
 aux 0 0
 aux 1 0
-aux 2 1
+aux 2 2
 aux 3 0
 aux 4 0
 aux 5 0
@@ -116,7 +116,7 @@ set alt_hold_fast_change = 1
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
 set rc_rate = 100
-set rc_expo = 35
+set rc_expo = 45
 set thr_mid = 50
 set thr_expo = 0
 set roll_rate = 50
@@ -144,8 +144,8 @@ set accxy_deadband = 40
 set accz_deadband = 40
 set acc_unarmedcal = 1
 set small_angle = 25
-set acc_trim_pitch = -16
-set acc_trim_roll = -57
+set acc_trim_pitch = 0
+set acc_trim_roll = 0
 set baro_tab_size = 21
 set baro_noise_lpf = 0.600
 set baro_cf_vel = 0.985
@@ -166,15 +166,15 @@ set nav_controls_heading = 1
 set nav_speed_min = 100
 set nav_speed_max = 300
 set nav_slew_rate = 30
-set p_pitch = 40
+set p_pitch = 38
 set i_pitch = 30
 set d_pitch = 23
-set p_roll = 40
+set p_roll = 38
 set i_roll = 30
 set d_roll = 23
-set p_yaw = 85
+set p_yaw = 255
 set i_yaw = 125
-set d_yaw = 0
+set d_yaw = 5
 set p_alt = 50
 set i_alt = 0
 set d_alt = 0

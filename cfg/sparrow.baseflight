@@ -17,7 +17,7 @@ aux 15 0
 aux 16 0
 aux 17 0
 aux 18 0
-aux 19 0
+aux 19 16
 aux 20 0
 aux 21 0
 aux 22 0
@@ -58,7 +58,7 @@ map TAER1234
 set looptime = 3500
 set emf_avoidance = 0
 set midrc = 1500
-set minthrottle = 1064
+set minthrottle = 1150
 set maxthrottle = 1850
 set mincommand = 1000
 set mincheck = 1100
@@ -89,7 +89,7 @@ set telemetry_provider = 0
 set telemetry_port = 0
 set telemetry_switch = 0
 set vbatscale = 157
-set currentscale = 230
+set currentscale = 250
 set currentoffset = 0
 set multiwiicurrentoutput = 0
 set vbatmaxcellvoltage = 43
@@ -111,7 +111,7 @@ set gyro_lpf = 42
 set gyro_cmpf_factor = 600
 set gyro_cmpfm_factor = 250
 set pid_controller = 0
-set deadband = 0
+set deadband = 2
 set yawdeadband = 0
 set alt_hold_throttle_neutral = 40
 set alt_hold_fast_change = 1

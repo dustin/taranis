@@ -1,0 +1,199 @@
+aux 0 0
+aux 1 0
+aux 2 2
+aux 3 0
+aux 4 0
+aux 5 0
+aux 6 0
+aux 7 0
+aux 8 0
+aux 9 0
+aux 10 0
+aux 11 0
+aux 12 0
+aux 13 0
+aux 14 0
+aux 15 0
+aux 16 0
+aux 17 0
+aux 18 0
+aux 19 0
+aux 20 0
+aux 21 0
+aux 22 0
+aux 23 0
+mixer QUADX
+servo 1 1020 1500 2000 30
+servo 2 1020 1500 2000 30
+servo 3 1020 1500 2000 100
+servo 4 1020 1500 2000 100
+servo 5 1020 1500 2000 100
+servo 6 1020 1500 2000 100
+servo 7 1020 1500 2000 100
+servo 8 1020 1500 2000 100
+feature -PPM
+feature -VBAT
+feature -INFLIGHT_ACC_CAL
+feature -SERIALRX
+feature -MOTOR_STOP
+feature -SERVO_TILT
+feature -SOFTSERIAL
+feature -LED_RING
+feature -GPS
+feature -FAILSAFE
+feature -SONAR
+feature -TELEMETRY
+feature -POWERMETER
+feature -VARIO
+feature -3D
+feature -FW_FAILSAFE_RTH
+feature -SYNCPWM
+feature -FASTPWM
+feature PPM
+feature VBAT
+feature SERVO_TILT
+feature FAILSAFE
+feature POWERMETER
+map TAER1234
+set looptime = 3500
+set emf_avoidance = 0
+set midrc = 1500
+set minthrottle = 1064
+set maxthrottle = 1850
+set mincommand = 1000
+set mincheck = 1100
+set maxcheck = 1900
+set deadband3d_low = 1406
+set deadband3d_high = 1514
+set neutral3d = 1460
+set deadband3d_throttle = 50
+set motor_pwm_rate = 400
+set servo_pwm_rate = 50
+set pwm_filter = 0
+set retarded_arm = 0
+set disarm_kill_switch = 1
+set fw_althold_dir = 1
+set reboot_character = 82
+set serial_baudrate = 115200
+set softserial_baudrate = 9600
+set softserial_1_inverted = 0
+set softserial_2_inverted = 0
+set gps_type = 0
+set gps_baudrate = 0
+set gps_ubx_sbas = 0
+set gps_autobaud = 0
+set serialrx_type = 0
+set spektrum_sat_bind = 0
+set spektrum_sat_on_flexport = 0
+set telemetry_provider = 0
+set telemetry_port = 0
+set telemetry_switch = 0
+set vbatscale = 157
+set currentscale = 400
+set currentoffset = 0
+set multiwiicurrentoutput = 0
+set vbatmaxcellvoltage = 43
+set vbatmincellvoltage = 33
+set vbatwarningcellvoltage = 35
+set power_adc_channel = 5
+set align_gyro = 0
+set align_acc = 0
+set align_mag = 0
+set align_board_roll = 0
+set align_board_pitch = 0
+set align_board_yaw = 0
+set yaw_control_direction = 1
+set acc_hardware = 0
+set mag_hardware = 0
+set max_angle_inclination = 500
+set moron_threshold = 32
+set gyro_lpf = 42
+set gyro_cmpf_factor = 600
+set gyro_cmpfm_factor = 250
+set pid_controller = 0
+set deadband = 0
+set yawdeadband = 0
+set alt_hold_throttle_neutral = 40
+set alt_hold_fast_change = 1
+set throttle_correction_value = 0
+set throttle_correction_angle = 800
+set rc_rate = 100
+set rc_expo = 50
+set thr_mid = 50
+set thr_expo = 0
+set roll_rate = 20
+set pitch_rate = 20
+set yaw_rate = 10
+set tpa_rate = 0
+set tpa_breakpoint = 1500
+set failsafe_delay = 10
+set failsafe_off_delay = 5
+set failsafe_throttle = 1200
+set failsafe_detect_threshold = 1007
+set auto_disarm_board = 5
+set rssi_aux_channel = 4
+set rssi_adc_channel = 0
+set rssi_adc_max = 4095
+set rssi_adc_offset = 0
+set yaw_direction = 1
+set tri_unarmed_servo = 1
+set fw_roll_throw = 0.500
+set fw_pitch_throw = 0.500
+set fw_vector_trust = 0
+set gimbal_flags = 1
+set acc_lpf_factor = 4
+set accxy_deadband = 40
+set accz_deadband = 40
+set acc_unarmedcal = 1
+set small_angle = 25
+set acc_trim_pitch = 0
+set acc_trim_roll = 0
+set baro_tab_size = 21
+set baro_noise_lpf = 0.600
+set baro_cf_vel = 0.985
+set baro_cf_alt = 0.965
+set accz_lpf_cutoff = 5.000
+set mag_declination = 0
+set gps_pos_p = 11
+set gps_pos_i = 0
+set gps_pos_d = 0
+set gps_posr_p = 20
+set gps_posr_i = 8
+set gps_posr_d = 45
+set gps_nav_p = 14
+set gps_nav_i = 20
+set gps_nav_d = 80
+set gps_wp_radius = 200
+set nav_controls_heading = 1
+set nav_speed_min = 100
+set nav_speed_max = 300
+set nav_slew_rate = 30
+set p_pitch = 40
+set i_pitch = 30
+set d_pitch = 23
+set p_roll = 40
+set i_roll = 30
+set d_roll = 23
+set p_yaw = 85
+set i_yaw = 45
+set d_yaw = 0
+set p_alt = 50
+set i_alt = 0
+set d_alt = 0
+set p_level = 90
+set i_level = 10
+set d_level = 100
+set p_vel = 120
+set i_vel = 45
+set d_vel = 1
+set fw_gps_maxcorr = 20
+set fw_gps_rudder = 15
+set fw_gps_maxclimb = 15
+set fw_gps_maxdive = 15
+set fw_climb_throttle = 1900
+set fw_cruise_throttle = 1500
+set fw_idle_throttle = 1300
+set fw_scaler_throttle = 8
+set fw_roll_comp = 1.000
+set fw_rth_alt = 45
+

@@ -23,6 +23,14 @@ aux 21 0
 aux 22 0
 aux 23 0
 mixer QUADX
+servo 1 1020 1500 2000 30
+servo 2 1020 1500 2000 30
+servo 3 1020 1500 2000 100
+servo 4 1020 1500 2000 100
+servo 5 1020 1500 2000 100
+servo 6 1020 1500 2000 100
+servo 7 1020 1500 2000 100
+servo 8 1020 1500 2000 100
 feature -PPM
 feature -VBAT
 feature -INFLIGHT_ACC_CAL
@@ -114,7 +122,8 @@ set rc_rate = 100
 set rc_expo = 50
 set thr_mid = 50
 set thr_expo = 0
-set roll_pitch_rate = 55
+set roll_rate = 55
+set pitch_rate = 55
 set yaw_rate = 50
 set tpa_rate = 47
 set tpa_breakpoint = 1500
@@ -129,8 +138,8 @@ set rssi_adc_max = 4095
 set rssi_adc_offset = 0
 set yaw_direction = 1
 set tri_unarmed_servo = 1
-set fw_roll_throw = 0.500
-set fw_pitch_throw = 0.500
+set fw_roll_throw =  0.500
+set fw_pitch_throw =  0.500
 set fw_vector_trust = 0
 set gimbal_flags = 1
 set acc_lpf_factor = 4
@@ -141,10 +150,10 @@ set small_angle = 25
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
 set baro_tab_size = 21
-set baro_noise_lpf = 0.600
-set baro_cf_vel = 0.985
-set baro_cf_alt = 0.965
-set accz_lpf_cutoff = 5.000
+set baro_noise_lpf =  0.600
+set baro_cf_vel =  0.985
+set baro_cf_alt =  0.965
+set accz_lpf_cutoff =  5.000
 set mag_declination = 0
 set gps_pos_p = 11
 set gps_pos_i = 0
@@ -186,5 +195,5 @@ set fw_climb_throttle = 1900
 set fw_cruise_throttle = 1500
 set fw_idle_throttle = 1300
 set fw_scaler_throttle = 8
-set fw_roll_comp = 1.000
+set fw_roll_comp =  1.000
 set fw_rth_alt = 45

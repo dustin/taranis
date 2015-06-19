@@ -55,6 +55,7 @@ feature SOFTSERIAL
 feature GPS
 feature FAILSAFE
 feature TELEMETRY
+feature POWERMETER
 map AETR1234
 set looptime = 3500
 set emf_avoidance = 1

@@ -54,11 +54,13 @@ feature VBAT
 feature SERVO_TILT
 feature FAILSAFE
 feature POWERMETER
+feature SYNCPWM
+feature FASTPWM
 map TAER1234
 set looptime = 3500
 set emf_avoidance = 0
 set midrc = 1500
-set minthrottle = 1150
+set minthrottle = 1064
 set maxthrottle = 1850
 set mincommand = 1000
 set mincheck = 1100

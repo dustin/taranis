@@ -24,9 +24,9 @@
             <field values="360,360,150" name="ManualRate"/>
             <field values="300,300,300" name="MaximumRate"/>
             <field values="30,30,30" name="PoiMaximumRate"/>
-            <field values="0.002,0.007,0,0.3" name="RollRatePID"/>
+            <field values="0.002,0.0060123,0,0.3" name="RollRatePID"/>
             <field values="0.002,0.0015,0,0.3" name="PitchRatePID"/>
-            <field values="0.006,0.006,0,0.3" name="YawRatePID"/>
+            <field values="0.00894994,0.006,0,0.3" name="YawRatePID"/>
             <field values="2,0,50" name="RollPI"/>
             <field values="2,0,50" name="PitchPI"/>
             <field values="2,0,50" name="YawPI"/>

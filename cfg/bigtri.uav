@@ -21,7 +21,7 @@
             <field values="NORMAL" name="TrimFlight"/>
         </object>
         <object id="0x2FF9D2" name="StabilizationSettings">
-            <field values="360,360,360" name="ManualRate"/>
+            <field values="360,360,150" name="ManualRate"/>
             <field values="300,300,300" name="MaximumRate"/>
             <field values="30,30,30" name="PoiMaximumRate"/>
             <field values="0.002,0.007,0,0.3" name="RollRatePID"/>
@@ -42,7 +42,7 @@
             <field values="55" name="RollMax"/>
             <field values="55" name="PitchMax"/>
             <field values="35" name="YawMax"/>
-            <field values="35,35,35" name="RateExpo"/>
+            <field values="35,35,10" name="RateExpo"/>
             <field values="30,30,30" name="HorizonExpo"/>
             <field values="75,0" name="RollRateTPA"/>
             <field values="75,0" name="PitchRateTPA"/>
@@ -58,26 +58,26 @@
         </object>
         <object id="0xF25577CC" name="TxPIDSettings">
             <field values="0.2,0.8" name="ThrottleRange"/>
-            <field values="0.005,0.005,0" name="MinPID"/>
-            <field values="0.007,0.007,0" name="MaxPID"/>
+            <field values="0.006,0.006,0" name="MinPID"/>
+            <field values="0.01,0.01,0" name="MaxPID"/>
             <field values="When Armed" name="UpdateMode"/>
             <field values="Accessory0,Accessory1,Accessory1" name="Inputs"/>
             <field values="Yaw Rate.Kp,Roll Rate.Ki,Disabled" name="PIDs"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field values="2162736,4,0,0" name="AirframeCategorySpecificConfiguration"/>
-            <field values="Custom" name="AirframeType"/>
+            <field values="Tri" name="AirframeType"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
             <field values="0,0.25,0.5,0.75,1" name="ThrottleCurve1"/>
             <field values="0,0.25,0.5,0.75,1" name="ThrottleCurve2"/>
             <field values="Throttle" name="Curve2Source"/>
             <field values="Motor" name="Mixer1Type"/>
-            <field values="127,0,127,63,-5" name="Mixer1Vector"/>
+            <field values="127,0,127,64,0" name="Mixer1Vector"/>
             <field values="Motor" name="Mixer2Type"/>
-            <field values="127,0,-127,63,5" name="Mixer2Vector"/>
+            <field values="127,0,-127,64,0" name="Mixer2Vector"/>
             <field values="Motor" name="Mixer3Type"/>
-            <field values="127,0,0,-126,-4" name="Mixer3Vector"/>
+            <field values="127,0,0,-127,0" name="Mixer3Vector"/>
             <field values="Servo" name="Mixer4Type"/>
             <field values="0,0,0,0,127" name="Mixer4Vector"/>
             <field values="Disabled" name="Mixer5Type"/>
@@ -116,11 +116,11 @@
             <field values="Yaw Right" name="Arming"/>
             <field values="1000" name="ArmTime"/>
             <field values="1000" name="DisarmTime"/>
-            <field values="Rate,Rate,AxisLock" name="Stabilization1Settings"/>
-            <field values="Attitude,Attitude,AxisLock" name="Stabilization2Settings"/>
+            <field values="Rate,Rate,Rate" name="Stabilization1Settings"/>
+            <field values="Rate,Rate,AxisLock" name="Stabilization2Settings"/>
             <field values="Attitude,Attitude,AxisLock" name="Stabilization3Settings"/>
             <field values="3" name="FlightModeNumber"/>
-            <field values="Stabilized1,Stabilized2,Stabilized3,AltitudeHold,PositionHold,Manual" name="FlightModePosition"/>
+            <field values="Acro,Stabilized2,Stabilized3,AltitudeHold,PositionHold,Manual" name="FlightModePosition"/>
             <field values="ENABLED" name="ArmTimeoutAutonomous"/>
         </object>
         <object id="0x6671CC24" name="ActuatorSettings">

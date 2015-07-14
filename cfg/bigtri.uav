@@ -160,7 +160,7 @@
             <field values="0" name="Pitch"/>
         </object>
         <object id="0x99F6B5E0" name="ModuleSettings">
-            <field values="Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled" name="AdminState"/>
+            <field values="Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled" name="AdminState"/>
             <field values="57600" name="TelemetrySpeed"/>
             <field values="57600" name="GPSSpeed"/>
             <field values="UBX" name="GPSDataProtocol"/>

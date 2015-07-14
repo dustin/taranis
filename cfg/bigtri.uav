@@ -1,49 +1,39 @@
 <!DOCTYPE UAVObjects>
 <uavobjects>
     <version>
-        <hardware serial="54ff6f065080564920361887" revision="2" type="4"/>
+        <hardware type="4" revision="2" serial="54ff6f065080564920361887"/>
         <firmware tag="20150705" date="20150705 23:45" hash="1d99a3c5"/>
         <gcs tag="20150705" date="20150705" hash="1d99a3c5"/>
     </version>
     <settings>
-        <object name="HwCopterControl" id="0x18F5E4B8">
-            <field name="RcvrPort" values="Disabled"/>
-            <field name="MainPort" values="S.Bus"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxBind" values="0"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="500"/>
-            <field name="MPU6000DLPF" values="256"/>
-        </object>
-        <object name="TxPIDSettings" id="0xF25577CC">
-            <field name="ThrottleRange" values="0.2,0.8"/>
-            <field name="MinPID" values="0.006,0.006,0"/>
-            <field name="MaxPID" values="0.01,0.01,0"/>
-            <field name="UpdateMode" values="When Armed"/>
-            <field name="Inputs" values="Accessory0,Accessory1,Accessory1"/>
-            <field name="PIDs" values="Yaw Rate.Kp,Roll Rate.Ki,Disabled"/>
+        <object name="MixerSettings" id="0x4E485B94">
+            <field name="ThrottleCurve1" values="0,0.25,0.5,0.75,1"/>
+            <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
+            <field name="Curve2Source" values="Throttle"/>
+            <field name="Mixer1Type" values="Motor"/>
+            <field name="Mixer1Vector" values="127,0,127,64,0"/>
+            <field name="Mixer2Type" values="Motor"/>
+            <field name="Mixer2Vector" values="127,0,-127,64,0"/>
+            <field name="Mixer3Type" values="Motor"/>
+            <field name="Mixer3Vector" values="127,0,0,-127,0"/>
+            <field name="Mixer4Type" values="Servo"/>
+            <field name="Mixer4Vector" values="0,0,0,0,127"/>
+            <field name="Mixer5Type" values="Disabled"/>
+            <field name="Mixer5Vector" values="0,0,0,0,0"/>
+            <field name="Mixer6Type" values="Disabled"/>
+            <field name="Mixer6Vector" values="0,0,0,0,0"/>
+            <field name="Mixer7Type" values="Disabled"/>
+            <field name="Mixer7Vector" values="0,0,0,0,0"/>
+            <field name="Mixer8Type" values="Disabled"/>
+            <field name="Mixer8Vector" values="0,0,0,0,0"/>
+            <field name="Mixer9Type" values="Disabled"/>
+            <field name="Mixer9Vector" values="0,0,0,0,0"/>
+            <field name="Mixer10Type" values="Disabled"/>
+            <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object name="TrimAnglesSettings" id="0x4E09A748">
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
-        </object>
-        <object name="SensorSettings" id="0xADB3B106">
-            <field name="AccelBias" values="0,0,0"/>
-            <field name="AccelScale" values="1,1,1"/>
-            <field name="GyroScale" values="1,1,1"/>
-            <field name="XGyroTempCoeff" values="-0.906792,0,0,0"/>
-            <field name="YGyroTempCoeff" values="1.37906,0,0,0"/>
-            <field name="ZGyroTempCoeff" values="1.71245,0,0,0"/>
-            <field name="MagBias" values="0,0,0"/>
-            <field name="MagScale" values="1,1,1"/>
-            <field name="ZAccelOffset" values="0.341601"/>
-        </object>
-        <object name="SystemSettings" id="0x6F3BB6B0">
-            <field name="AirframeCategorySpecificConfiguration" values="2162736,4,0,0"/>
-            <field name="AirframeType" values="Tri"/>
         </object>
         <object name="ActuatorSettings" id="0x6671CC24">
             <field name="TimerUpdateFreq" values="400,50,50,50,50,50"/>
@@ -53,14 +43,6 @@
             <field name="TimerPwmResolution" values="1MHz,1MHz,1MHz,1MHz,1MHz,1MHz"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
             <field name="MotorsSpinWhileArmed" values="TRUE"/>
-        </object>
-        <object name="MWRateSettings" id="0xBD3B5F28">
-            <field name="RollRatePID" values="0.004,0.0086,5e-05,0.3"/>
-            <field name="PitchRatePID" values="0.004,0.0086,5e-05,0.3"/>
-            <field name="YawRatePID" values="0.0085,0.013,0,0.3"/>
-            <field name="DerivativeGamma" values="0"/>
-            <field name="RollPitchRate" values="0"/>
-            <field name="YawRate" values="0"/>
         </object>
         <object name="ManualControlSettings" id="0xDF1F700E">
             <field name="Deadband" values="0.015"/>
@@ -88,8 +70,8 @@
             <field name="ManualRate" values="360,360,180"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.002,0.002,0,0.3"/>
-            <field name="PitchRatePID" values="0.002,0.002,0,0.3"/>
+            <field name="RollRatePID" values="0.00267,0.0025,1.7e-05,0.3"/>
+            <field name="PitchRatePID" values="0.00479,0.0047,3.1e-05,0.3"/>
             <field name="YawRatePID" values="0.00895,0.006,0,0.3"/>
             <field name="RollPI" values="2,0,50"/>
             <field name="PitchPI" values="2,0,50"/>
@@ -120,30 +102,17 @@
             <field name="MaxWeakLevelingRate" values="5"/>
             <field name="LowThrottleZeroIntegral" values="TRUE"/>
         </object>
-        <object name="MixerSettings" id="0x4E485B94">
-            <field name="ThrottleCurve1" values="0,0.25,0.5,0.75,1"/>
-            <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
-            <field name="Curve2Source" values="Throttle"/>
-            <field name="Mixer1Type" values="Motor"/>
-            <field name="Mixer1Vector" values="127,0,127,64,0"/>
-            <field name="Mixer2Type" values="Motor"/>
-            <field name="Mixer2Vector" values="127,0,-127,64,0"/>
-            <field name="Mixer3Type" values="Motor"/>
-            <field name="Mixer3Vector" values="127,0,0,-127,0"/>
-            <field name="Mixer4Type" values="Servo"/>
-            <field name="Mixer4Vector" values="0,0,0,0,127"/>
-            <field name="Mixer5Type" values="Disabled"/>
-            <field name="Mixer5Vector" values="0,0,0,0,0"/>
-            <field name="Mixer6Type" values="Disabled"/>
-            <field name="Mixer6Vector" values="0,0,0,0,0"/>
-            <field name="Mixer7Type" values="Disabled"/>
-            <field name="Mixer7Vector" values="0,0,0,0,0"/>
-            <field name="Mixer8Type" values="Disabled"/>
-            <field name="Mixer8Vector" values="0,0,0,0,0"/>
-            <field name="Mixer9Type" values="Disabled"/>
-            <field name="Mixer9Vector" values="0,0,0,0,0"/>
-            <field name="Mixer10Type" values="Disabled"/>
-            <field name="Mixer10Vector" values="0,0,0,0,0"/>
+        <object name="HwCopterControl" id="0x18F5E4B8">
+            <field name="RcvrPort" values="Disabled"/>
+            <field name="MainPort" values="S.Bus"/>
+            <field name="FlexiPort" values="Disabled"/>
+            <field name="USB_HIDPort" values="USBTelemetry"/>
+            <field name="USB_VCPPort" values="Disabled"/>
+            <field name="DSMxBind" values="0"/>
+            <field name="GyroRange" values="500"/>
+            <field name="AccelRange" values="8G"/>
+            <field name="MPU6000Rate" values="500"/>
+            <field name="MPU6000DLPF" values="256"/>
         </object>
         <object name="AttitudeSettings" id="0x2257CF36">
             <field name="MagKp" values="0.05"/>
@@ -158,6 +127,29 @@
             <field name="BiasCorrectGyro" values="TRUE"/>
             <field name="FilterChoice" values="CCC"/>
             <field name="TrimFlight" values="NORMAL"/>
+        </object>
+        <object name="SensorSettings" id="0xADB3B106">
+            <field name="AccelBias" values="0,0,0"/>
+            <field name="AccelScale" values="1,1,1"/>
+            <field name="GyroScale" values="1,1,1"/>
+            <field name="XGyroTempCoeff" values="-0.906792,0,0,0"/>
+            <field name="YGyroTempCoeff" values="1.37906,0,0,0"/>
+            <field name="ZGyroTempCoeff" values="1.71245,0,0,0"/>
+            <field name="MagBias" values="0,0,0"/>
+            <field name="MagScale" values="1,1,1"/>
+            <field name="ZAccelOffset" values="0.341601"/>
+        </object>
+        <object name="SystemSettings" id="0x6F3BB6B0">
+            <field name="AirframeCategorySpecificConfiguration" values="2162736,4,0,0"/>
+            <field name="AirframeType" values="Tri"/>
+        </object>
+        <object name="MWRateSettings" id="0xBD3B5F28">
+            <field name="RollRatePID" values="0.004,0.0086,5e-05,0.3"/>
+            <field name="PitchRatePID" values="0.004,0.0086,5e-05,0.3"/>
+            <field name="YawRatePID" values="0.0085,0.013,0,0.3"/>
+            <field name="DerivativeGamma" values="0"/>
+            <field name="RollPitchRate" values="0"/>
+            <field name="YawRate" values="0"/>
         </object>
         <object name="ModuleSettings" id="0x99F6B5E0">
             <field name="AdminState" values="Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>

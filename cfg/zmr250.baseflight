@@ -56,6 +56,7 @@ feature FAILSAFE
 feature TELEMETRY
 feature POWERMETER
 feature SYNCPWM
+feature FASTPWM
 map AETR1234
 set looptime = 2500
 set emf_avoidance = 0
@@ -129,7 +130,7 @@ set yaw_rate = 55
 set tpa_rate = 35
 set tpa_breakpoint = 1500
 set failsafe_delay = 10
-set failsafe_off_delay = 200
+set failsafe_off_delay = 5
 set failsafe_throttle = 1200
 set failsafe_detect_threshold = 985
 set auto_disarm_board = 5

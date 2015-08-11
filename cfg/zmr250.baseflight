@@ -56,7 +56,6 @@ feature FAILSAFE
 feature TELEMETRY
 feature POWERMETER
 feature SYNCPWM
-feature FASTPWM
 map AETR1234
 set looptime = 2500
 set emf_avoidance = 0

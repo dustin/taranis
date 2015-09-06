@@ -135,7 +135,7 @@ set gps_auto_baud = 0
 set serialrx_provider = 0
 set spektrum_sat_bind = 0
 set telemetry_switch = 0
-set telemetry_inversion = 0
+set telemetry_inversion = 1
 set frsky_default_lattitude =  0.000
 set frsky_default_longitude =  0.000
 set frsky_coordinates_format = 0
@@ -145,8 +145,8 @@ set hott_alarm_sound_interval = 5
 set battery_capacity = 0
 set vbat_scale = 110
 set vbat_max_cell_voltage = 43
-set vbat_min_cell_voltage = 33
-set vbat_warning_cell_voltage = 35
+set vbat_min_cell_voltage = 29
+set vbat_warning_cell_voltage = 30
 set current_meter_scale = 400
 set current_meter_offset = 0
 set multiwii_current_meter_output = 0
@@ -180,9 +180,9 @@ set mag_hardware = 0
 set blackbox_rate_num = 1
 set blackbox_rate_denom = 1
 set blackbox_device = 1
-set magzero_x = 0
-set magzero_y = 0
-set magzero_z = 0
+set magzero_x = 109
+set magzero_y = 280
+set magzero_z = -87
 
 # rxfail
 rxfail 0 a
@@ -327,7 +327,7 @@ set p_vel = 120
 set i_vel = 45
 set d_vel = 1
 set yaw_p_limit = 500
-set gyro_cut_hz = 0
+set gyro_cut_hz = 60
 set pterm_cut_hz = 40
 set dterm_cut_hz = 10
 
@@ -336,13 +336,13 @@ set dterm_cut_hz = 10
 # rateprofile
 rateprofile 0
 
-set rc_rate = 90
-set rc_expo = 65
-set rc_yaw_expo = 0
+set rc_rate = 100
+set rc_expo = 66
+set rc_yaw_expo = 20
 set thr_mid = 50
 set thr_expo = 0
 set roll_rate = 55
 set pitch_rate = 55
-set yaw_rate = 44
-set tpa_rate = 50
+set yaw_rate = 22
+set tpa_rate = 20
 set tpa_breakpoint = 1500

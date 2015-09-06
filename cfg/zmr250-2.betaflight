@@ -207,13 +207,13 @@ rxfail 17 a
 # dump profile
 
 # profile
-profile 0
+profile 1
 
 # aux
-aux 0 12 2 1300 2100
-aux 1 25 3 1300 1700
-aux 2 0 0 900 900
-aux 3 0 0 900 900
+aux 0 2 0 1300 1700
+aux 1 3 0 1700 2100
+aux 2 12 2 1300 1700
+aux 3 25 3 1300 1700
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
@@ -281,7 +281,7 @@ set deadband = 0
 set yaw_deadband = 0
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
-set default_rate_profile = 0
+set default_rate_profile = 1
 set gimbal_mode = 0
 set acc_lpf_factor = 4
 set accxy_deadband = 40
@@ -295,22 +295,22 @@ set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
-set pid_controller = 2
-set p_pitch = 40
-set i_pitch = 30
+set pid_controller = 0
+set p_pitch = 32
+set i_pitch = 42
 set d_pitch = 23
-set p_roll = 40
-set i_roll = 30
+set p_roll = 32
+set i_roll = 32
 set d_roll = 23
 set p_yaw = 85
 set i_yaw = 45
 set d_yaw = 0
-set p_pitchf =  1.400
-set i_pitchf =  0.150
-set d_pitchf =  0.019
-set p_rollf =  1.300
-set i_rollf =  0.150
-set d_rollf =  0.019
+set p_pitchf =  1.500
+set i_pitchf =  0.400
+set d_pitchf =  0.030
+set p_rollf =  1.500
+set i_rollf =  0.400
+set d_rollf =  0.030
 set p_yawf =  2.500
 set i_yawf =  1.000
 set d_yawf =  0.000
@@ -327,22 +327,22 @@ set p_vel = 120
 set i_vel = 45
 set d_vel = 1
 set yaw_p_limit = 500
-set gyro_cut_hz = 60
+set gyro_cut_hz = 0
 set pterm_cut_hz = 40
 set dterm_cut_hz = 10
 
 # dump rates
 
 # rateprofile
-rateprofile 0
+rateprofile 1
 
 set rc_rate = 100
-set rc_expo = 65
-set rc_yaw_expo = 20
+set rc_expo = 50
+set rc_yaw_expo = 0
 set thr_mid = 50
 set thr_expo = 0
-set roll_rate = 42
-set pitch_rate = 30
-set yaw_rate = 22
-set tpa_rate = 0
+set roll_rate = 66
+set pitch_rate = 66
+set yaw_rate = 70
+set tpa_rate = 31
 set tpa_breakpoint = 1500

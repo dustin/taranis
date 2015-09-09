@@ -307,10 +307,10 @@ set i_yaw = 45
 set d_yaw = 0
 set p_pitchf =  1.400
 set i_pitchf =  0.150
-set d_pitchf =  0.022
+set d_pitchf =  0.027
 set p_rollf =  1.300
 set i_rollf =  0.150
-set d_rollf =  0.021
+set d_rollf =  0.027
 set p_yawf =  2.500
 set i_yawf =  1.000
 set d_yawf =  0.000
@@ -336,7 +336,7 @@ set dterm_cut_hz = 10
 # rateprofile
 rateprofile 0
 
-set rc_rate = 100
+set rc_rate = 110
 set rc_expo = 66
 set rc_yaw_expo = 20
 set thr_mid = 50

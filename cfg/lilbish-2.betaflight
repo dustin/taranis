@@ -212,8 +212,8 @@ profile 1
 # aux
 aux 0 2 0 1300 1700
 aux 1 3 0 1700 2100
-aux 2 12 2 1300 1700
-aux 3 25 3 1300 1700
+aux 2 12 2 900 1025
+aux 3 25 2 1050 1175
 aux 4 0 0 900 900
 aux 5 0 0 900 900
 aux 6 0 0 900 900
@@ -232,8 +232,8 @@ aux 18 0 0 900 900
 aux 19 0 0 900 900
 
 # adjrange
-adjrange 0 0 0 900 900 0 0
-adjrange 1 0 0 900 900 0 0
+adjrange 0 0 2 1200 1300 16 3
+adjrange 1 0 2 1300 1400 19 3
 adjrange 2 0 0 900 900 0 0
 adjrange 3 0 0 900 900 0 0
 adjrange 4 0 0 900 900 0 0

@@ -1,4 +1,3 @@
-
 # version
 # BetaFlight/NAZE 1.10.0 Sep  4 2015 / 11:13:56 (3b5d31f)
 # dump master
@@ -297,14 +296,14 @@ set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
 set pid_controller = 0
-set p_pitch = 20
-set i_pitch = 32
-set d_pitch = 22
-set p_roll = 14
-set i_roll = 30
-set d_roll = 22
+set p_pitch = 22
+set i_pitch = 35
+set d_pitch = 28
+set p_roll = 18
+set i_roll = 19
+set d_roll = 29
 set p_yaw = 85
-set i_yaw = 45
+set i_yaw = 200
 set d_yaw = 0
 set p_pitchf =  0.900
 set i_pitchf =  0.220

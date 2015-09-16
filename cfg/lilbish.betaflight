@@ -337,12 +337,12 @@ set dterm_cut_hz = 10
 rateprofile 0
 
 set rc_rate = 100
-set rc_expo = 55
+set rc_expo = 75
 set rc_yaw_expo = 30
 set thr_mid = 50
 set thr_expo = 0
 set roll_rate = 49
 set pitch_rate = 49
 set yaw_rate = 22
-set tpa_rate = 20
+set tpa_rate = 33
 set tpa_breakpoint = 1500

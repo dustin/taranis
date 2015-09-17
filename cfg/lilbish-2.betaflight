@@ -282,7 +282,7 @@ set deadband = 0
 set yaw_deadband = 0
 set throttle_correction_value = 0
 set throttle_correction_angle = 800
-set default_rate_profile = 0
+set default_rate_profile = 1
 set gimbal_mode = 0
 set acc_lpf_factor = 4
 set accxy_deadband = 40
@@ -296,13 +296,13 @@ set baro_noise_lpf =  0.600
 set baro_cf_vel =  0.985
 set baro_cf_alt =  0.965
 set mag_declination = 0
-set pid_controller = 0
+set pid_controller = 1
 set p_pitch = 22
-set i_pitch = 39
-set d_pitch = 31
-set p_roll = 16
-set i_roll = 21
-set d_roll = 38
+set i_pitch = 0
+set d_pitch = 0
+set p_roll = 15
+set i_roll = 0
+set d_roll = 0
 set p_yaw = 85
 set i_yaw = 45
 set d_yaw = 0
@@ -335,15 +335,15 @@ set dterm_cut_hz = 10
 # dump rates
 
 # rateprofile
-rateprofile 0
+rateprofile 1
 
 set rc_rate = 100
-set rc_expo = 55
+set rc_expo = 50
 set rc_yaw_expo = 30
 set thr_mid = 50
 set thr_expo = 0
 set roll_rate = 49
 set pitch_rate = 49
 set yaw_rate = 22
-set tpa_rate = 33
+set tpa_rate = 28
 set tpa_breakpoint = 1500

@@ -56,13 +56,14 @@ feature FAILSAFE
 feature TELEMETRY
 feature POWERMETER
 feature SYNCPWM
+feature FASTPWM
 map AETR1234
 set looptime = 2500
 set emf_avoidance = 0
 set midrc = 1500
 set minthrottle = 1100
 set maxthrottle = 1850
-set mincommand = 1000
+set mincommand = 936
 set mincheck = 1100
 set maxcheck = 1900
 set deadband3d_low = 1406

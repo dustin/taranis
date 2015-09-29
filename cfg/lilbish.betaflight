@@ -1,5 +1,5 @@
 # version
-# BetaFlight/NAZE 1.10.0 Sep  4 2015 / 11:13:56 (3b5d31f)
+# BetaFlight v2/NAZE 1.10.0 Sep 25 2015 / 14:47:36 (97c65fe)
 # dump master
 
 # mixer
@@ -101,10 +101,7 @@ color 13 330,0,255
 color 14 0,0,0
 color 15 0,0,0
 
-set looptime = 0
-set sync_gyro_to_loop = 1
 set emf_avoidance = 0
-set rc_smoothing = 1
 set mid_rc = 1500
 set min_check = 1100
 set max_check = 1900
@@ -158,7 +155,6 @@ set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
 set max_angle_inclination = 500
-set gyro_lpf = 188
 set moron_threshold = 32
 set gyro_cmpf_factor = 600
 set gyro_cmpfm_factor = 250
@@ -172,6 +168,8 @@ set servo_lowpass_enable = 0
 set failsafe_delay = 10
 set failsafe_off_delay = 20
 set failsafe_throttle = 1000
+set failsafe_kill_switch = 0
+set failsafe_throttle_low_delay = 100
 set rx_min_usec = 885
 set rx_max_usec = 2115
 set acc_hardware = 0
@@ -327,8 +325,6 @@ set p_vel = 120
 set i_vel = 45
 set d_vel = 1
 set yaw_p_limit = 500
-set gyro_cut_hz = 60
-set pterm_cut_hz = 40
 set dterm_cut_hz = 10
 
 # dump rates

@@ -209,8 +209,8 @@ rxfail 17 h
 profile 0
 
 # aux
-aux 0 0 0 900 900
-aux 1 0 0 900 900
+aux 0 2 0 1300 1700
+aux 1 12 2 1300 1700
 aux 2 0 0 900 900
 aux 3 0 0 900 900
 aux 4 0 0 900 900
@@ -335,7 +335,7 @@ rateprofile 0
 
 set rc_rate = 110
 set rc_expo = 90
-set rc_yaw_expo = 0
+set rc_yaw_expo = 50
 set thr_mid = 50
 set thr_expo = 0
 set roll_rate = 40

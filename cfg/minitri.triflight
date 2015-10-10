@@ -1,4 +1,4 @@
-# TriFlight 0.2/NAZE 1.10.0 Oct  4 2015 / 13:06:58 (a68007e)
+# TriFlight 0.2/NAZE 1.10.0 Oct  7 2015 / 15:54:50 (943d8ff)
 # dump master
 
 # mixer
@@ -33,6 +33,7 @@ feature RX_PPM
 feature VBAT
 feature FAILSAFE
 feature CURRENT_METER
+feature ONESHOT125
 
 
 # map

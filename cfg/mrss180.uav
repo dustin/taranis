@@ -207,7 +207,7 @@
             <field name="AltitudeScale" values="Enabled"/>
             <field name="AltitudeScaleAlign" values="Right"/>
             <field name="AltitudeScaleSource" values="Baro"/>
-            <field name="AltitudeNumeric" values="Enabled"/>
+            <field name="AltitudeNumeric" values="Disabled"/>
             <field name="AltitudeNumericAlign" values="Left"/>
             <field name="AltitudeNumericFont" values="Small"/>
             <field name="AltitudeNumericSource" values="Baro"/>
@@ -268,17 +268,17 @@
             <field name="Rssi" values="Disabled"/>
             <field name="RssiFont" values="Small"/>
             <field name="RssiShowIcon" values="Enabled"/>
-            <field name="SpeedScale" values="Enabled"/>
+            <field name="SpeedScale" values="Disabled"/>
             <field name="SpeedScaleAlign" values="Left"/>
             <field name="SpeedScaleSource" values="GPS"/>
-            <field name="SpeedNumeric" values="Enabled"/>
+            <field name="SpeedNumeric" values="Disabled"/>
             <field name="SpeedNumericFont" values="Small"/>
             <field name="SpeedNumericAlign" values="Left"/>
             <field name="SpeedNumericSource" values="GPS"/>
             <field name="Time" values="Enabled"/>
             <field name="TimeFont" values="Small"/>
             <field name="TimeAlign" values="Right"/>
-            <field name="Throttle" values="Disabled"/>
+            <field name="Throttle" values="Enabled"/>
             <field name="ThrottleFont" values="Small"/>
             <field name="ThrottleAlign" values="Right"/>
         </object>

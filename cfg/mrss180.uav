@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware serial="4e004f000c51343231383537" revision="1" type="8a"/>
-        <firmware date="20150928 16:18" hash="eae96097" tag="Brain-20150928"/>
-        <gcs date="20150928" hash="eae96097" tag="Brain-20150928"/>
+        <firmware tag="Brain-20150928" date="20150928 16:18" hash="eae96097"/>
+        <gcs tag="Brain-20150928" date="20150928" hash="eae96097"/>
     </version>
     <settings>
         <object name="ActuatorSettings" id="0x6671CC24">
@@ -73,6 +73,11 @@
             <field name="BaroVar" values="0.00999999978"/>
             <field name="MagBiasNullingRate" values="0"/>
             <field name="ComputeGyroBias" values="FALSE"/>
+        </object>
+        <object name="LoggingSettings" id="0xE2787F88">
+            <field name="LogBehavior" values="LogOnArm"/>
+            <field name="LogSettingsOnStart" values="True"/>
+            <field name="MaxLogRate" values="25"/>
         </object>
         <object name="MWRateSettings" id="0xBD3B5F28">
             <field name="RollRatePID" values="0.00400000019,0.00860000029,4.99999987e-05,0.300000012"/>
@@ -747,11 +752,11 @@
             <field name="NavigationFilter" values="None"/>
         </object>
         <object name="SystemIdent" id="0xADAFDDF2">
-            <field name="Tau" values="-2.98633838"/>
-            <field name="Beta" values="10.3203392,10.0376616,8.6866188"/>
-            <field name="Bias" values="0.0148325497,0.000961387996,-0.0119726667"/>
-            <field name="Noise" values="240.637146,102.365311,438.066162"/>
-            <field name="Period" values="2.9610002"/>
+            <field name="Tau" values="-3.94589949"/>
+            <field name="Beta" values="9.97471142,9.5775423,7.46841621"/>
+            <field name="Bias" values="-0.00507347705,-0.0460240729,0.0647296682"/>
+            <field name="Noise" values="48.4116478,145.083069,217.572433"/>
+            <field name="Period" values="2.96600008"/>
         </object>
         <object name="SystemSettings" id="0x6F3BB6B0">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>
@@ -760,6 +765,11 @@
         <object name="TrimAnglesSettings" id="0x4E09A748">
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
+        </object>
+        <object name="VibrationAnalysisSettings" id="0x5C5C96B6">
+            <field name="SampleRate" values="20"/>
+            <field name="FFTWindowSize" values="16"/>
+            <field name="TestingStatus" values="Off"/>
         </object>
     </settings>
 </uavobjects>

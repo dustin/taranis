@@ -105,17 +105,17 @@
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object name="MixerSettings" id="0x4E485B94">
-            <field name="ThrottleCurve1" values="0,0.25,0.5,0.75,1"/>
+            <field name="ThrottleCurve1" values="0,0.224999994,0.449999988,0.675000012,0.899999976"/>
             <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
             <field name="Curve2Source" values="Throttle"/>
             <field name="Mixer1Type" values="Motor"/>
-            <field name="Mixer1Vector" values="127,0,63,63,-63"/>
+            <field name="Mixer1Vector" values="127,0,64,64,-63"/>
             <field name="Mixer2Type" values="Motor"/>
-            <field name="Mixer2Vector" values="127,0,-63,63,63"/>
+            <field name="Mixer2Vector" values="127,0,-63,64,64"/>
             <field name="Mixer3Type" values="Motor"/>
             <field name="Mixer3Vector" values="127,0,-63,-63,-63"/>
             <field name="Mixer4Type" values="Motor"/>
-            <field name="Mixer4Vector" values="127,0,63,-63,63"/>
+            <field name="Mixer4Vector" values="127,0,64,-63,64"/>
             <field name="Mixer5Type" values="Disabled"/>
             <field name="Mixer5Vector" values="0,0,0,0,0"/>
             <field name="Mixer6Type" values="Disabled"/>

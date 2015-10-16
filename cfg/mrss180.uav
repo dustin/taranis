@@ -35,7 +35,7 @@
             <field name="CurrentPin" values="ADC1"/>
             <field name="VoltagePin" values="ADC0"/>
             <field name="NbCells" values="4"/>
-            <field name="FlightTimeThresholds" values="120,30"/>
+            <field name="FlightTimeThresholds" values="60,30"/>
         </object>
         <object name="FlightStatsSettings" id="0x88BAE028">
             <field name="StatsBehavior" values="ResetOnArm"/>

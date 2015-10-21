@@ -52,7 +52,7 @@
         <object name="HwBrain" id="0x3320EF6C">
             <field name="RxPort" values="PPM+FrSky"/>
             <field name="MainPort" values="Disabled"/>
-            <field name="FlxPort" values="Disabled"/>
+            <field name="FlxPort" values="FrSKY Sensor Hub"/>
             <field name="RxPortUsart" values="Disabled"/>
             <field name="USB_HIDPort" values="USBTelemetry"/>
             <field name="USB_VCPPort" values="Disabled"/>

@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
-        <hardware serial="4e004f000c51343231383537" type="8a" revision="1"/>
-        <firmware tag="Brain-20150928" date="20150928 16:18" hash="eae96097"/>
-        <gcs tag="Brain-20150928" date="20150928" hash="eae96097"/>
+        <hardware serial="4e004f000c51343231383537" revision="1" type="8a"/>
+        <firmware date="20150928 16:18" hash="eae96097" tag="Brain-20150928"/>
+        <gcs date="20150928" hash="eae96097" tag="Brain-20150928"/>
     </version>
     <settings>
         <object name="ActuatorSettings" id="0x6671CC24">
@@ -13,22 +13,6 @@
             <field name="TimerPwmResolution" values="12MHz,12MHz,12MHz,1MHz,1MHz,1MHz"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
             <field name="MotorsSpinWhileArmed" values="TRUE"/>
-        </object>
-        <object name="AirspeedSettings" id="0x63F679C">
-            <field name="Scale" values="1"/>
-            <field name="ZeroPoint" values="0"/>
-            <field name="GPSSamplePeriod_ms" values="100"/>
-            <field name="AirspeedSensorType" values="GPSOnly"/>
-            <field name="AnalogPin" values="NONE"/>
-        </object>
-        <object name="AltitudeHoldSettings" id="0x93E52E4C">
-            <field name="PositionKp" values="1"/>
-            <field name="VelocityKp" values="0.300000012"/>
-            <field name="VelocityKi" values="0.300000012"/>
-            <field name="AttitudeComp" values="100"/>
-            <field name="MaxRate" values="4"/>
-            <field name="Expo" values="40"/>
-            <field name="Deadband" values="30"/>
         </object>
         <object name="AttitudeSettings" id="0x9DB8D0A">
             <field name="MagKp" values="0.0500000007"/>
@@ -43,53 +27,6 @@
             <field name="BiasCorrectGyro" values="TRUE"/>
             <field name="FilterChoice" values="CCC"/>
         </object>
-        <object name="BrushlessGimbalSettings" id="0xB50DDC74">
-            <field name="Damping" values="0.5,0.5,0.5"/>
-            <field name="MaxDPS" values="65535,65535,65535"/>
-            <field name="SlewLimit" values="32000,32000,32000"/>
-            <field name="PowerScale" values="33,33,33"/>
-            <field name="MaxAngle" values="35,35,35"/>
-            <field name="RollFraction" values="0"/>
-            <field name="PowerupSequence" values="TRUE"/>
-        </object>
-        <object name="CameraStabSettings" id="0xFA09A51A">
-            <field name="MaxAxisLockRate" values="1"/>
-            <field name="MaxAccel" values="1000"/>
-            <field name="Input" values="None,None,None"/>
-            <field name="InputRange" values="20,20,20"/>
-            <field name="InputRate" values="50,50,50"/>
-            <field name="OutputRange" values="20,20,20"/>
-            <field name="FeedForward" values="0,0,0"/>
-            <field name="StabilizationMode" values="Attitude,Attitude,Attitude"/>
-            <field name="AttitudeFilter" values="0"/>
-            <field name="InputFilter" values="0"/>
-            <field name="FeedForwardTime" values="0"/>
-        </object>
-        <object name="FaultSettings" id="0x2778BA3C">
-            <field name="ActivateFault" values="NoFault"/>
-        </object>
-        <object name="FixedWingAirspeeds" id="0x3FCF7F6">
-            <field name="AirSpeedMax" values="20"/>
-            <field name="CruiseSpeed" values="15"/>
-            <field name="BestClimbRateSpeed" values="11"/>
-            <field name="StallSpeedClean" values="8"/>
-            <field name="StallSpeedDirty" values="8"/>
-            <field name="VerticalVelMax" values="10"/>
-        </object>
-        <object name="FixedWingPathFollowerSettings" id="0x56C316DA">
-            <field name="HorizontalPosP" values="0.600000024"/>
-            <field name="VerticalPosP" values="0.0500000007"/>
-            <field name="BearingPI" values="0.600000024,0,0"/>
-            <field name="PowerPI" values="1.5,0.150000006,20"/>
-            <field name="VerticalToPitchCrossFeed" values="5,10"/>
-            <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
-            <field name="SpeedPI" values="0.00999999978,0.00999999978,0.800000012"/>
-            <field name="RollLimit" values="-35,0,35"/>
-            <field name="PitchLimit" values="-10,0,10"/>
-            <field name="ThrottleLimit" values="0,0.5,1"/>
-            <field name="OrbitRadius" values="50"/>
-            <field name="UpdatePeriod" values="100"/>
-        </object>
         <object name="FlightBatterySettings" id="0x391F094C">
             <field name="Capacity" values="1000"/>
             <field name="VoltageThresholds" values="13.3000002,11.6000004"/>
@@ -100,33 +37,8 @@
             <field name="NbCells" values="4"/>
             <field name="FlightTimeThresholds" values="60,30"/>
         </object>
-        <object name="FlightPlanSettings" id="0x92E9FF76">
-            <field name="Test" values="0"/>
-        </object>
         <object name="FlightStatsSettings" id="0x88BAE028">
             <field name="StatsBehavior" values="ResetOnArm"/>
-        </object>
-        <object name="GeoFenceSettings" id="0xDF5EA7FE">
-            <field name="WarningRadius" values="200"/>
-            <field name="ErrorRadius" values="250"/>
-        </object>
-        <object name="GroundPathFollowerSettings" id="0x9090C16">
-            <field name="HorizontalPosPI" values="1,0,0"/>
-            <field name="HorizontalVelPID" values="5,0,1,0"/>
-            <field name="VelocityFeedforward" values="0"/>
-            <field name="MaxThrottle" values="1"/>
-            <field name="UpdatePeriod" values="100"/>
-            <field name="HorizontalVelMax" values="10"/>
-            <field name="ManualOverride" values="FALSE"/>
-            <field name="ThrottleControl" values="PROPORTIONAL"/>
-            <field name="VelocitySource" values="EKF"/>
-            <field name="PositionSource" values="EKF"/>
-            <field name="EndpointRadius" values="2"/>
-        </object>
-        <object name="HoTTSettings" id="0x6CBC1102">
-            <field name="Limit" values="30,100,-10,10,-1,1,20,500,1500,5,30,5,30,5,30,3.29999995,40,2000,0,100,0,100,100,100,7000,1000,0"/>
-            <field name="Sensor" values="Disabled,Disabled,Disabled,Disabled,Disabled"/>
-            <field name="Warning" values="Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
         </object>
         <object name="HomeLocation" id="0xCA32B032">
             <field name="Latitude" values="0"/>
@@ -136,24 +48,6 @@
             <field name="GroundTemperature" values="150"/>
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
-        </object>
-        <object name="HwAQ32" id="0x34DABF2A">
-            <field name="RcvrPort" values="Disabled"/>
-            <field name="Uart1" values="Disabled"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="Uart3" values="Disabled"/>
-            <field name="Uart4" values="Disabled"/>
-            <field name="Uart6" values="Disabled"/>
-            <field name="ADCInputs" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="666"/>
-            <field name="MPU6000DLPF" values="256"/>
-            <field name="Magnetometer" values="Internal"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
         </object>
         <object name="HwBrain" id="0x3320EF6C">
             <field name="RxPort" values="PPM"/>
@@ -165,196 +59,11 @@
             <field name="DSMxMode" values="Autodetect"/>
             <field name="GyroFullScale" values="2000"/>
             <field name="AccelFullScale" values="8G"/>
-            <field name="MPU9250Rate" values="500"/>
+            <field name="MPU9250Rate" values="1000"/>
             <field name="MPU9250GyroLPF" values="184"/>
             <field name="MPU9250AccelLPF" values="184"/>
             <field name="Magnetometer" values="Internal"/>
             <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwColibri" id="0xF2E30E62">
-            <field name="Frame" values="Gemini"/>
-            <field name="RcvrPort" values="PPM"/>
-            <field name="Uart1" values="Disabled"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="Uart3" values="Disabled"/>
-            <field name="Uart4" values="Telemetry"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="2000"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="666"/>
-            <field name="MPU6000DLPF" values="256"/>
-            <field name="Magnetometer" values="Internal"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwCopterControl" id="0x59034D34">
-            <field name="RcvrPort" values="PWM"/>
-            <field name="MainPort" values="Disabled"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="500"/>
-            <field name="MPU6000DLPF" values="256"/>
-        </object>
-        <object name="HwDiscoveryF4" id="0xC256F860">
-            <field name="MainPort" values="Bad Value"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-        </object>
-        <object name="HwFlyingF3" id="0x5936A5D2">
-            <field name="RcvrPort" values="PWM"/>
-            <field name="Uart1" values="Disabled"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="Uart3" values="Disabled"/>
-            <field name="Uart4" values="Disabled"/>
-            <field name="Uart5" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="L3GD20Rate" values="380"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="Shield" values="None"/>
-        </object>
-        <object name="HwFlyingF4" id="0x6FA6C522">
-            <field name="RcvrPort" values="PWM"/>
-            <field name="Uart1" values="Disabled"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="Uart3" values="Disabled"/>
-            <field name="Uart4" values="Disabled"/>
-            <field name="Uart5" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6050Rate" values="666"/>
-            <field name="MPU6050DLPF" values="256"/>
-            <field name="Magnetometer" values="Disabled"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwNaze" id="0x3696AD3A">
-            <field name="RcvrPort" values="PPM"/>
-            <field name="RcvrSerial" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="500"/>
-            <field name="MPU6000DLPF" values="256"/>
-        </object>
-        <object name="HwQuanton" id="0xDA4D824A">
-            <field name="RcvrPort" values="PWM"/>
-            <field name="Uart1" values="Disabled"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="Uart3" values="Disabled"/>
-            <field name="Uart4" values="Telemetry"/>
-            <field name="Uart5" values="GPS"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="666"/>
-            <field name="MPU6000DLPF" values="256"/>
-            <field name="Magnetometer" values="Internal"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwRevoMini" id="0x6B1584">
-            <field name="CoordID" values="0"/>
-            <field name="RcvrPort" values="PWM"/>
-            <field name="MainPort" values="Telemetry"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="Radio" values="Disabled"/>
-            <field name="MaxRfSpeed" values="64000"/>
-            <field name="MaxRfPower" values="0"/>
-            <field name="MinChannel" values="0"/>
-            <field name="MaxChannel" values="250"/>
-            <field name="ChannelSet" values="39"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU6000Rate" values="666"/>
-            <field name="MPU6000DLPF" values="256"/>
-        </object>
-        <object name="HwShared" id="0x9B80C6D8">
-            <field name="PortTypes" values="Disabled"/>
-            <field name="MagOrientation" values="Top0degCW"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="RadioPort" values="Disabled"/>
-            <field name="MaxRfSpeed" values="64000"/>
-            <field name="MaxRfPower" values="1.25"/>
-            <field name="DSMxMode" values="Autodetect"/>
-        </object>
-        <object name="HwSparky" id="0xC178AF78">
-            <field name="RcvrPort" values="Disabled"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="MainPort" values="Disabled"/>
-            <field name="OutPort" values="PWM10"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU9150DLPF" values="256"/>
-            <field name="MPU9150Rate" values="444"/>
-            <field name="Magnetometer" values="Internal"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwSparky2" id="0x5E852A4C">
-            <field name="CoordID" values="0"/>
-            <field name="RcvrPort" values="Disabled"/>
-            <field name="MainPort" values="Disabled"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="Radio" values="Disabled"/>
-            <field name="MaxRfSpeed" values="64000"/>
-            <field name="MaxRfPower" values="1.25"/>
-            <field name="MinChannel" values="0"/>
-            <field name="MaxChannel" values="250"/>
-            <field name="GyroRange" values="2000"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU9250Rate" values="500"/>
-            <field name="MPU9250GyroLPF" values="184"/>
-            <field name="MPU9250AccelLPF" values="184"/>
-            <field name="VTX_Ch" values="1"/>
-            <field name="Magnetometer" values="Internal"/>
-            <field name="ExtMagOrientation" values="Top0degCW"/>
-        </object>
-        <object name="HwSparkyBGC" id="0xAC9C1AC8">
-            <field name="RcvrPort" values="Disabled"/>
-            <field name="FlexiPort" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="500"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="MPU9150DLPF" values="256"/>
-            <field name="MPU9150Rate" values="444"/>
-        </object>
-        <object name="HwTauLink" id="0x69FB4FF4">
-            <field name="CoordID" values="0"/>
-            <field name="Radio" values="Disabled"/>
-            <field name="MainPort" values="GPS"/>
-            <field name="BTPort" values="Telemetry"/>
-            <field name="PPMPort" values="PPM+SPORT"/>
-            <field name="VCPPort" values="Disabled"/>
-            <field name="ComSpeed" values="57600"/>
-            <field name="MaxRfSpeed" values="64000"/>
-            <field name="MaxRfPower" values="3.16"/>
-            <field name="MinChannel" values="0"/>
-            <field name="MaxChannel" values="250"/>
-        </object>
-        <object name="I2CVMUserProgram" id="0xED9CC1AC">
-            <field name="Program" values="134676490,84541440,84607232,84673024,84738816,117441025,117441282,117441539,100663812,100664069,100664326,385875968,168296447,33554452,50855927,0,0,0,0,0"/>
         </object>
         <object name="INSSettings" id="0xE2DBC224">
             <field name="AccelVar" values="0.00300000003,0.00300000003,0.00300000003"/>
@@ -364,11 +73,6 @@
             <field name="BaroVar" values="0.00999999978"/>
             <field name="MagBiasNullingRate" values="0"/>
             <field name="ComputeGyroBias" values="FALSE"/>
-        </object>
-        <object name="LoggingSettings" id="0xE2787F88">
-            <field name="LogBehavior" values="LogOnArm"/>
-            <field name="LogSettingsOnStart" values="True"/>
-            <field name="MaxLogRate" values="25"/>
         </object>
         <object name="MWRateSettings" id="0xBD3B5F28">
             <field name="RollRatePID" values="0.00400000019,0.00860000029,4.99999987e-05,0.300000012"/>
@@ -426,7 +130,7 @@
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object name="ModuleSettings" id="0x7D5CE5BA">
-            <field name="AdminState" values="Disabled,Disabled,Enabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="AdminState" values="Disabled,Disabled,Enabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="57600"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -524,7 +228,7 @@
             <field name="ClimbRateAlign" values="Right"/>
             <field name="Compass" values="Enabled"/>
             <field name="CompassHomeDir" values="Enabled"/>
-            <field name="Cpu" values="Disabled"/>
+            <field name="Cpu" values="Enabled"/>
             <field name="CpuFont" values="Small"/>
             <field name="CpuAlign" values="Left"/>
             <field name="CustomText" values="Enabled"/>
@@ -984,42 +688,10 @@
             <field name="NumPages" values="3"/>
             <field name="PageSwitch" values="Accessory0"/>
             <field name="PageConfig" values="Custom1,Statistics,Menu,Custom1,Custom1,Custom1"/>
-            <field name="DisableMenuWhenArmed" values="Disabled"/>
+            <field name="DisableMenuWhenArmed" values="Enabled"/>
             <field name="RssiWarnThreshold" values="50"/>
             <field name="CustomText" values="75,71,54,72,87,70,32,32,32,32"/>
             <field name="StatsDisplayDuration" values="20s"/>
-        </object>
-        <object name="OpenLRS" id="0x44F8119A">
-            <field name="serial_baudrate" values="0"/>
-            <field name="rf_frequency" values="0"/>
-            <field name="rf_magic" values="0"/>
-            <field name="beacon_frequency" values="462712500"/>
-            <field name="failsafe_delay" values="1000"/>
-            <field name="version" values="0"/>
-            <field name="rf_power" values="0"/>
-            <field name="rf_channel_spacing" values="0"/>
-            <field name="hopchannel" values="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-            <field name="modem_params" values="0"/>
-            <field name="flags" values="0"/>
-            <field name="beacon_delay" values="30"/>
-            <field name="beacon_period" values="15"/>
-            <field name="RSSI_Type" values="Combined"/>
-        </object>
-        <object name="OveroSyncSettings" id="0xA1ABC278">
-            <field name="LogOn" values="Armed"/>
-        </object>
-        <object name="PathPlannerSettings" id="0x77A9E8F0">
-            <field name="PreprogrammedPath" values="NONE"/>
-            <field name="FlashOperation" values="NONE"/>
-        </object>
-        <object name="PicoCSettings" id="0x5DB16FFE">
-            <field name="MaxFileSize" values="2048"/>
-            <field name="TaskStackSize" values="16384"/>
-            <field name="PicoCStackSize" values="16384"/>
-            <field name="BootFileID" values="0"/>
-            <field name="Startup" values="Disabled"/>
-            <field name="Source" values="Disabled"/>
-            <field name="ComSpeed" values="115200"/>
         </object>
         <object name="SensorSettings" id="0xADB3B106">
             <field name="AccelBias" values="0.0887351483,-0.0635337383,-0.0260597188"/>
@@ -1036,11 +708,11 @@
             <field name="ManualRate" values="720,720,360"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00214,0.00698000006,4.80000017e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00264000008,0.0086099999,5.90000018e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00222999998,0.0118899997,3.09999996e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00257000001,0.0137299998,3.60000013e-05,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="5.99900007,0,50"/>
-            <field name="PitchPI" values="5.99900007,0,50"/>
+            <field name="RollPI" values="9.81499958,0,50"/>
+            <field name="PitchPI" values="9.81499958,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -1064,7 +736,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="21"/>
+            <field name="DerivativeCutoff" values="35"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -1075,11 +747,11 @@
             <field name="NavigationFilter" values="None"/>
         </object>
         <object name="SystemIdent" id="0xADAFDDF2">
-            <field name="Tau" values="-3.94589949"/>
-            <field name="Beta" values="9.97471142,9.5775423,7.46841621"/>
-            <field name="Bias" values="-0.00507347705,-0.0460240729,0.0647296682"/>
-            <field name="Noise" values="48.4116478,145.083069,217.572433"/>
-            <field name="Period" values="2.96600008"/>
+            <field name="Tau" values="-3.9644978"/>
+            <field name="Beta" values="10.1662693,10.0219383,9.03963375"/>
+            <field name="Bias" values="-0.00493046641,-0.00270781526,-0.0236014649"/>
+            <field name="Noise" values="72.3130035,75.8898544,235.699051"/>
+            <field name="Period" values="2.98500013"/>
         </object>
         <object name="SystemSettings" id="0x6F3BB6B0">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>
@@ -1088,45 +760,6 @@
         <object name="TrimAnglesSettings" id="0x4E09A748">
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
-        </object>
-        <object name="TxPIDSettings" id="0xF15E2028">
-            <field name="ThrottleRange" values="0.200000003,0.800000012"/>
-            <field name="MinPID" values="0,0,0"/>
-            <field name="MaxPID" values="0,0,0"/>
-            <field name="UpdateMode" values="When Armed"/>
-            <field name="Inputs" values="Throttle,Accessory0,Accessory1"/>
-            <field name="PIDs" values="Disabled,Disabled,Disabled"/>
-        </object>
-        <object name="VibrationAnalysisSettings" id="0x5C5C96B6">
-            <field name="SampleRate" values="20"/>
-            <field name="FFTWindowSize" values="16"/>
-            <field name="TestingStatus" values="Off"/>
-        </object>
-        <object name="VtolPathFollowerSettings" id="0xE25C4F1E">
-            <field name="HorizontalPosPI" values="1,0,2"/>
-            <field name="HorizontalVelPID" values="2.5999999,0.400000006,0,5"/>
-            <field name="VelocityFeedforward" values="0"/>
-            <field name="PositionFeedforward" values="0.449999988"/>
-            <field name="EndpointDeadbandWidth" values="0.449999988"/>
-            <field name="EndpointDeadbandCenterGain" values="0.300000012"/>
-            <field name="PathDeadbandWidth" values="1.25"/>
-            <field name="PathDeadbandCenterGain" values="0.100000001"/>
-            <field name="MaxRollPitch" values="20"/>
-            <field name="EndpointRadius" values="2"/>
-            <field name="WaypointAltitudeTol" values="2"/>
-            <field name="UpdatePeriod" values="50"/>
-            <field name="LandingRate" values="0.5"/>
-            <field name="LoiterBrakingTimeConstant" values="1.25"/>
-            <field name="LoiterErrorDecayConstant" values="0.330000013"/>
-            <field name="LoiterLookaheadTimeConstant" values="1.25"/>
-            <field name="LoiterInitialMaxVel" values="3.5"/>
-            <field name="LoiterAttitudeFeedthrough" values="15"/>
-            <field name="HorizontalVelMax" values="10"/>
-            <field name="VerticalVelMax" values="2"/>
-            <field name="ThrottleControl" values="FALSE"/>
-            <field name="VelocityChangePrediction" values="FALSE"/>
-            <field name="YawMode" values="AxisLock"/>
-            <field name="LoiterAllowAltControl" values="FALSE"/>
         </object>
     </settings>
 </uavobjects>

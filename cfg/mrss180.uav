@@ -50,7 +50,7 @@
             <field name="Set" values="FALSE"/>
         </object>
         <object name="HwBrain" id="0x3320EF6C">
-            <field name="RxPort" values="PPM"/>
+            <field name="RxPort" values="PPM+FrSky"/>
             <field name="MainPort" values="Disabled"/>
             <field name="FlxPort" values="Disabled"/>
             <field name="RxPortUsart" values="Disabled"/>
@@ -84,14 +84,14 @@
         </object>
         <object name="ManualControlSettings" id="0xCC4A79BC">
             <field name="Deadband" values="0.0199999996"/>
-            <field name="RssiMax" values="2000"/>
-            <field name="RssiMin" values="1000"/>
+            <field name="RssiMax" values="213"/>
+            <field name="RssiMin" values="10"/>
             <field name="ChannelMin" values="995,995,2023,995,1004,0,996,996,0,0"/>
             <field name="ChannelNeutral" values="996,1510,1512,1504,1509,-1,1510,1510,-1,-1"/>
             <field name="ChannelMax" values="2023,2024,994,2024,2014,0,2018,2018,0,0"/>
             <field name="ArmedTimeout" values="30000"/>
             <field name="ChannelGroups" values="PPM,PPM,PPM,PPM,PPM,None,PPM,PPM,None,None"/>
-            <field name="RssiType" values="None"/>
+            <field name="RssiType" values="FrSkyPWM"/>
             <field name="RssiChannelNumber" values="0"/>
             <field name="ChannelNumber" values="3,1,2,4,5,0,6,7,0,0"/>
             <field name="Arming" values="Yaw Right"/>
@@ -188,7 +188,7 @@
             <field name="MapHeightMeters" values="2000"/>
             <field name="MapHeightPixels" values="140"/>
             <field name="RssiPosX" values="130"/>
-            <field name="RssiPosY" values="195"/>
+            <field name="RssiPosY" values="230"/>
             <field name="SpeedScalePos" values="0"/>
             <field name="SpeedNumericPosX" values="50"/>
             <field name="SpeedNumericPosY" values="200"/>
@@ -228,7 +228,7 @@
             <field name="ClimbRateAlign" values="Right"/>
             <field name="Compass" values="Enabled"/>
             <field name="CompassHomeDir" values="Enabled"/>
-            <field name="Cpu" values="Enabled"/>
+            <field name="Cpu" values="Disabled"/>
             <field name="CpuFont" values="Small"/>
             <field name="CpuAlign" values="Left"/>
             <field name="CustomText" values="Enabled"/>
@@ -260,12 +260,12 @@
             <field name="MapShowWp" values="Disabled"/>
             <field name="MapShowUavHome" values="Enabled"/>
             <field name="MapShowTablet" values="Disabled"/>
-            <field name="Rssi" values="Disabled"/>
+            <field name="Rssi" values="Enabled"/>
             <field name="RssiFont" values="Small"/>
             <field name="RssiShowIcon" values="Enabled"/>
             <field name="SpeedScale" values="Disabled"/>
             <field name="SpeedScaleAlign" values="Left"/>
-            <field name="SpeedScaleSource" values="GPS"/>
+            <field name="SpeedScaleSource" values="Airspeed"/>
             <field name="SpeedNumeric" values="Disabled"/>
             <field name="SpeedNumericFont" values="Small"/>
             <field name="SpeedNumericAlign" values="Left"/>

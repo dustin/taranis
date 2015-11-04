@@ -1,15 +1,15 @@
 <uavobjects>
     <version>
         <hardware revision="2" serial="1f001f000157325237313620" type="88"/>
-        <firmware date="20151027 22:23" hash="d3ca5341" tag="next-dirty"/>
-        <gcs date="20151027" hash="d3ca5341" tag="next"/>
+        <firmware date="20151103 03:50" hash="1de231cb" tag="next-dirty"/>
+        <gcs date="20151102" hash="8ab4c5f3" tag="next"/>
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
             <field name="MotorInputOutputCurveFit" values="1,1"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,250,250,250,250,250,250"/>
-            <field name="ChannelNeutral" values="128,128,128,128,125,125,125,125,125,125"/>
+            <field name="ChannelNeutral" values="131,128,128,128,125,125,125,125,125,125"/>
             <field name="ChannelMin" values="125,125,125,125,125,125,125,125,125,125"/>
             <field name="TimerPwmResolution" values="12MHz,12MHz,12MHz,1MHz,1MHz,1MHz"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
@@ -83,14 +83,14 @@
             <field name="Deadband" values="0"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
-            <field name="ChannelMin" values="172,172,1811,172,188,0,172,176,0,0"/>
-            <field name="ChannelNeutral" values="180,990,997,982,992,-1,992,992,-1,-1"/>
-            <field name="ChannelMax" values="1811,1811,172,1811,1795,0,1811,1801,0,0"/>
+            <field name="ChannelMin" values="172,172,1811,172,188,0,172,176,172,0"/>
+            <field name="ChannelNeutral" values="180,990,997,982,992,-1,992,992,992,-1"/>
+            <field name="ChannelMax" values="1811,1811,172,1811,1795,0,1811,1801,1811,0"/>
             <field name="ArmedTimeout" values="30000"/>
-            <field name="ChannelGroups" values="S.Bus,S.Bus,S.Bus,S.Bus,S.Bus,None,S.Bus,S.Bus,None,None"/>
+            <field name="ChannelGroups" values="S.Bus,S.Bus,S.Bus,S.Bus,S.Bus,None,S.Bus,S.Bus,S.Bus,None"/>
             <field name="RssiType" values="None"/>
             <field name="RssiChannelNumber" values="0"/>
-            <field name="ChannelNumber" values="3,1,2,4,5,0,6,7,0,0"/>
+            <field name="ChannelNumber" values="3,1,2,4,5,0,6,7,8,0"/>
             <field name="Arming" values="Yaw Right"/>
             <field name="ArmTime" values="250"/>
             <field name="DisarmTime" values="1000"/>
@@ -157,11 +157,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00170999998,0.00575000001,4.6000001e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00236000004,0.00796999969,6.39999998e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00246000011,0.00896999985,4.3e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00300000003,0.01095,5.19999994e-05,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="6.15600014,0,50"/>
-            <field name="PitchPI" values="6.15600014,0,50"/>
+            <field name="RollPI" values="6.70499992,0,50"/>
+            <field name="PitchPI" values="6.70499992,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -196,11 +196,11 @@
             <field name="NavigationFilter" values="None"/>
         </object>
         <object id="0xADAFDDF2" name="SystemIdent">
-            <field name="Tau" values="-3.20911741"/>
-            <field name="Beta" values="10.2189713,9.89378643,8.5875597"/>
-            <field name="Bias" values="0.00282376981,-0.0334410779,-0.0254956912"/>
-            <field name="Noise" values="331.353516,152.088074,507.334869"/>
-            <field name="Period" values="3.54700017"/>
+            <field name="Tau" values="-3.72487855"/>
+            <field name="Beta" values="9.5803566,9.38116169,8.68092918"/>
+            <field name="Bias" values="-0.0028069946,-0.0264697205,-0.0259789526"/>
+            <field name="Noise" values="536.016907,163.053604,335.010223"/>
+            <field name="Period" values="2.70200014"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>

@@ -159,7 +159,7 @@
             <field name="PoiMaximumRate" values="30,30,30"/>
             <field name="RollRatePID" values="0.00246000011,0.00896999985,4.3e-05,0.300000012"/>
             <field name="PitchRatePID" values="0.00300000003,0.01095,5.19999994e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
+            <field name="YawRatePID" values="0.00353999995,0.0129300002,0,0.300000012"/>
             <field name="RollPI" values="6.70499992,0,50"/>
             <field name="PitchPI" values="6.70499992,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>

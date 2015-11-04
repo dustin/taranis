@@ -9,7 +9,7 @@
             <field name="MotorInputOutputCurveFit" values="1,1"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,250,250,250,250,250,250"/>
-            <field name="ChannelNeutral" values="131,128,128,128,125,125,125,125,125,125"/>
+            <field name="ChannelNeutral" values="128,128,128,128,125,125,125,125,125,125"/>
             <field name="ChannelMin" values="125,125,125,125,125,125,125,125,125,125"/>
             <field name="TimerPwmResolution" values="12MHz,12MHz,12MHz,1MHz,1MHz,1MHz"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>

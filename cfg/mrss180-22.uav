@@ -80,7 +80,7 @@
             <field name="YawRate" values="0"/>
         </object>
         <object id="0xCC4A79BC" name="ManualControlSettings">
-            <field name="Deadband" values="0"/>
+            <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
             <field name="ChannelMin" values="172,172,1811,172,188,0,172,176,172,0"/>

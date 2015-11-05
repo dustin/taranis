@@ -1,7 +1,7 @@
 <uavobjects>
     <version>
         <hardware revision="2" serial="1f001f000157325237313620" type="88"/>
-        <firmware date="20151103 03:50" hash="1de231cb" tag="next-dirty"/>
+        <firmware date="20151104 05:14" hash="9017f47a" tag="ahi-dirty"/>
         <gcs date="20151102" hash="8ab4c5f3" tag="next"/>
     </version>
     <settings>
@@ -18,8 +18,8 @@
         <object id="0x9DB8D0A" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
             <field name="MagKi" values="9.99999975e-05"/>
-            <field name="AccelKp" values="0.0500000007"/>
-            <field name="AccelKi" values="9.99999975e-05"/>
+            <field name="AccelKp" values="0.0199999996"/>
+            <field name="AccelKi" values="3.9999999e-05"/>
             <field name="AccelTau" values="0.100000001"/>
             <field name="VertPositionTau" values="2"/>
             <field name="YawBiasRate" values="9.99999997e-07"/>
@@ -31,10 +31,10 @@
         <object id="0x391F094C" name="FlightBatterySettings">
             <field name="Capacity" values="1000"/>
             <field name="VoltageThresholds" values="14.3999996,12.8000002"/>
-            <field name="SensorCalibrationFactor" values="15.6999998,36.5999985"/>
+            <field name="SensorCalibrationFactor" values="63.6699982,36.5999985"/>
             <field name="SensorCalibrationOffset" values="0,0"/>
             <field name="CurrentPin" values="ADC1"/>
-            <field name="VoltagePin" values="ADC0"/>
+            <field name="VoltagePin" values="ADC2"/>
             <field name="NbCells" values="4"/>
             <field name="FlightTimeThresholds" values="120,30"/>
         </object>

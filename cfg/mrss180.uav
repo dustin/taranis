@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
-        <hardware type="8a" revision="1" serial="4e004f000c51343231383537"/>
-        <firmware date="20150928 16:18" hash="eae96097" tag="Brain-20150928"/>
-        <gcs date="20150928" hash="eae96097" tag="Brain-20150928"/>
+        <hardware type="8a" serial="4e004f000c51343231383537" revision="1"/>
+        <firmware tag="Brain-20150928" date="20150928 16:18" hash="eae96097"/>
+        <gcs tag="Brain-20150928" date="20150928" hash="eae96097"/>
     </version>
     <settings>
         <object id="0x6671CC24" name="ActuatorSettings">
@@ -29,7 +29,7 @@
         </object>
         <object id="0x391F094C" name="FlightBatterySettings">
             <field values="1000" name="Capacity"/>
-            <field values="13.3000002,11.6000004" name="VoltageThresholds"/>
+            <field values="13.3000002,12.8999996" name="VoltageThresholds"/>
             <field values="63.6899986,36.5999985" name="SensorCalibrationFactor"/>
             <field values="0,0" name="SensorCalibrationOffset"/>
             <field values="ADC1" name="CurrentPin"/>

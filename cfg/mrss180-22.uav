@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="2" serial="1f001f000157325237313620" type="88"/>
-        <firmware date="20151104 05:14" hash="9017f47a" tag="ahi-dirty"/>
-        <gcs date="20151102" hash="8ab4c5f3" tag="next"/>
+        <firmware date="20151114 22:02" hash="9e4706ab" tag="mspalrm"/>
+        <gcs date="20151114" hash="9e4706ab" tag="mspalrm"/>
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
@@ -18,8 +18,8 @@
         <object id="0x9DB8D0A" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
             <field name="MagKi" values="9.99999975e-05"/>
-            <field name="AccelKp" values="0.0199999996"/>
-            <field name="AccelKi" values="3.9999999e-05"/>
+            <field name="AccelKp" values="0.0500000007"/>
+            <field name="AccelKi" values="9.99999975e-05"/>
             <field name="AccelTau" values="0.100000001"/>
             <field name="VertPositionTau" values="2"/>
             <field name="YawBiasRate" values="9.99999997e-07"/>
@@ -36,7 +36,7 @@
             <field name="CurrentPin" values="ADC1"/>
             <field name="VoltagePin" values="ADC2"/>
             <field name="NbCells" values="4"/>
-            <field name="FlightTimeThresholds" values="120,30"/>
+            <field name="FlightTimeThresholds" values="30,10"/>
         </object>
         <object id="0xCA32B032" name="HomeLocation">
             <field name="Latitude" values="0"/>
@@ -157,11 +157,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00246000011,0.00896999985,4.3e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00300000003,0.01095,5.19999994e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00353999995,0.0129300002,0,0.300000012"/>
-            <field name="RollPI" values="6.70499992,0,50"/>
-            <field name="PitchPI" values="6.70499992,0,50"/>
+            <field name="RollRatePID" values="0.00225999998,0.0130099999,2.99999992e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.0025200001,0.01449,3.30000003e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
+            <field name="RollPI" values="10.5719995,0,50"/>
+            <field name="PitchPI" values="10.5719995,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -185,7 +185,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="23"/>
+            <field name="DerivativeCutoff" values="38"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -196,11 +196,11 @@
             <field name="NavigationFilter" values="None"/>
         </object>
         <object id="0xADAFDDF2" name="SystemIdent">
-            <field name="Tau" values="-3.72487855"/>
-            <field name="Beta" values="9.5803566,9.38116169,8.68092918"/>
-            <field name="Bias" values="-0.0028069946,-0.0264697205,-0.0259789526"/>
-            <field name="Noise" values="536.016907,163.053604,335.010223"/>
-            <field name="Period" values="2.70200014"/>
+            <field name="Tau" values="-4.01806355"/>
+            <field name="Beta" values="10.240696,10.1327591,5.63422394"/>
+            <field name="Bias" values="0.00996682141,-0.0172421318,0.00178676832"/>
+            <field name="Noise" values="177.871231,89.4428558,980.779419"/>
+            <field name="Period" values="2.92900014"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>

@@ -88,14 +88,14 @@
         </object>
         <object id="0xCC4A79BC" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
-            <field name="RssiMax" values="2000"/>
-            <field name="RssiMin" values="1000"/>
+            <field name="RssiMax" values="248"/>
+            <field name="RssiMin" values="0"/>
             <field name="ChannelMin" values="984,984,2016,984,984,0,0,0,0,0"/>
             <field name="ChannelNeutral" values="1004,1502,1502,1485,1502,-1,-1,-1,-1,-1"/>
             <field name="ChannelMax" values="2016,2016,984,2016,2016,0,0,0,0,0"/>
             <field name="ArmedTimeout" values="30000"/>
             <field name="ChannelGroups" values="OpenLRS,OpenLRS,OpenLRS,OpenLRS,OpenLRS,None,OpenLRS,OpenLRS,OpenLRS,None"/>
-            <field name="RssiType" values="None"/>
+            <field name="RssiType" values="OpenLRS"/>
             <field name="RssiChannelNumber" values="0"/>
             <field name="ChannelNumber" values="1,2,3,4,5,0,6,7,8,0"/>
             <field name="Arming" values="Yaw Right"/>

@@ -6,7 +6,7 @@
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
-            <field name="MotorInputOutputCurveFit" values="1,1"/>
+            <field name="MotorInputOutputCurveFit" values="1,0.699999988"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,250,250,250,250,250,250"/>
             <field name="ChannelNeutral" values="133,133,133,133,125,125,125,125,125,125"/>
@@ -87,7 +87,7 @@
             <field name="YawRate" values="0"/>
         </object>
         <object id="0xCC4A79BC" name="ManualControlSettings">
-            <field name="Deadband" values="0"/>
+            <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
             <field name="ChannelMin" values="984,984,2016,984,984,0,0,0,0,0"/>
@@ -180,11 +180,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00206999993,0.0109400004,2.99999992e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00246999995,0.0130799999,3.60000013e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00211,0.0159200002,1.70000003e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00319000008,0.0240199994,2.49999994e-05,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="9.72999954,0,50"/>
-            <field name="PitchPI" values="9.72999954,0,50"/>
+            <field name="RollPI" values="13.8500004,0,50"/>
+            <field name="PitchPI" values="13.8500004,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -208,7 +208,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="35"/>
+            <field name="DerivativeCutoff" values="48"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -219,11 +219,11 @@
             <field name="NavigationFilter" values="None"/>
         </object>
         <object id="0xADAFDDF2" name="SystemIdent">
-            <field name="Tau" values="-3.91460705"/>
-            <field name="Beta" values="10.2643251,10.0855083,7.7335763"/>
-            <field name="Bias" values="-0.0175332092,-0.0172085073,-0.009386166"/>
-            <field name="Noise" values="125.328697,337.251617,453.330902"/>
-            <field name="Period" values="2.66600013"/>
+            <field name="Tau" values="-4.49980593"/>
+            <field name="Beta" values="10.422308,10.0111952,8.5378027"/>
+            <field name="Bias" values="-0.00657181581,0.00115827017,-0.0157359354"/>
+            <field name="Noise" values="65.9037018,538.272339,306.658447"/>
+            <field name="Period" values="2.96700025"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>

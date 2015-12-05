@@ -1,12 +1,12 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="56ff6d064989564951332487" type="a0"/>
-        <firmware date="20151205 02:23" hash="09a14797" tag="tz-autotown"/>
-        <gcs date="20151205" hash="09a14797" tag="tz-autotown"/>
+        <firmware date="20151205 19:34" hash="35fabfd7" tag="next"/>
+        <gcs date="20151205" hash="35fabfd7" tag="next"/>
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
-            <field name="MotorInputOutputCurveFit" values="1,1"/>
+            <field name="MotorInputOutputCurveFit" values="1,0.699999988"/>
             <field name="TimerUpdateFreq" values="0,0,50,50,0,50"/>
             <field name="ChannelMax" values="250,250,250,250,2000,2000,2000,2000,2000,2000"/>
             <field name="ChannelNeutral" values="133,133,133,133,1000,1000,1000,1000,1000,1000"/>
@@ -38,7 +38,7 @@
             <field name="NbCells" values="4"/>
             <field name="FlightTimeThresholds" values="45,20"/>
         </object>
-        <object id="0xE0E32096" name="HwNaze">
+        <object id="0x43EA0B18" name="HwNaze">
             <field name="MainPort" values="MSP"/>
             <field name="RcvrPort" values="PPM"/>
             <field name="RcvrSerial" values="Disabled"/>
@@ -57,11 +57,11 @@
             <field name="YawRate" values="0"/>
         </object>
         <object id="0xCC4A79BC" name="ManualControlSettings">
-            <field name="Deadband" values="0"/>
+            <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
             <field name="ChannelMin" values="990,991,2015,990,1000,0,991,993,0,0"/>
-            <field name="ChannelNeutral" values="1010,1503,1504,1501,1504,-1,1503,1504,-1,-1"/>
+            <field name="ChannelNeutral" values="1010,1503,1504,1500,1504,-1,1503,1504,-1,-1"/>
             <field name="ChannelMax" values="2016,2016,991,2016,2006,0,2016,2010,0,0"/>
             <field name="ArmedTimeout" values="30000"/>
             <field name="ChannelGroups" values="PPM,PPM,PPM,PPM,PPM,None,PPM,PPM,None,None"/>
@@ -103,8 +103,8 @@
             <field name="Mixer10Type" values="Disabled"/>
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
-        <object id="0x63F2079A" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+        <object id="0x48A5C4" name="ModuleSettings">
+            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="57600"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -134,11 +134,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00249999994,0.0139899999,2.90000007e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00359999994,0.0201699995,4.19999997e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="10.1639996,0,50"/>
-            <field name="PitchPI" values="10.1639996,0,50"/>
+            <field name="RollRatePID" values="0.00100000005,0.00359999994,2.7e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00230000005,0.00789999962,5.80000014e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00359999994,0.0121999998,0,0.300000012"/>
+            <field name="RollPI" values="6.10599995,0,50"/>
+            <field name="PitchPI" values="6.10599995,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -162,7 +162,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="35"/>
+            <field name="DerivativeCutoff" values="22"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>

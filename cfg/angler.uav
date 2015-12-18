@@ -1,12 +1,12 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="2b003d000151343235353635" type="92"/>
-        <firmware date="20151120 03:06" hash="bcdeb7f0" tag="mspalrm"/>
-        <gcs date="20151120" hash="bcdeb7f0" tag="mspalrm"/>
+        <firmware date="20151217 20:20" hash="e5de2729" tag="next"/>
+        <gcs date="20151217" hash="e5de2729" tag="next"/>
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
-            <field name="MotorInputOutputCurveFit" values="1,0.699999988"/>
+            <field name="MotorInputOutputCurveFit" values="1,0.800000012"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,250,250,250,250,250,250"/>
             <field name="ChannelNeutral" values="133,133,133,133,125,125,125,125,125,125"/>
@@ -23,7 +23,7 @@
             <field name="AccelTau" values="0.100000001"/>
             <field name="VertPositionTau" values="2"/>
             <field name="YawBiasRate" values="9.99999997e-07"/>
-            <field name="BoardRotation" values="-5,0,0"/>
+            <field name="BoardRotation" values="100,0,0"/>
             <field name="ZeroDuringArming" values="TRUE"/>
             <field name="BiasCorrectGyro" values="TRUE"/>
             <field name="FilterChoice" values="CCC"/>
@@ -47,7 +47,7 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0x7BA0E9B4" name="HwSparky2">
+        <object id="0xBD4DA26" name="HwSparky2">
             <field name="CoordID" values="0"/>
             <field name="RcvrPort" values="Disabled"/>
             <field name="MainPort" values="Disabled"/>
@@ -56,8 +56,9 @@
             <field name="USB_VCPPort" values="Disabled"/>
             <field name="DSMxMode" values="Autodetect"/>
             <field name="Radio" values="OpenLRS"/>
-            <field name="MaxRfSpeed" values="9600"/>
-            <field name="MaxRfPower" values="0"/>
+            <field name="MaxRfSpeed" values="64000"/>
+            <field name="MaxRfPower" values="1.25"/>
+            <field name="RfBand" values="BoardDefault"/>
             <field name="MinChannel" values="0"/>
             <field name="MaxChannel" values="250"/>
             <field name="GyroRange" values="2000"/>
@@ -65,7 +66,7 @@
             <field name="MPU9250Rate" values="500"/>
             <field name="MPU9250GyroLPF" values="184"/>
             <field name="MPU9250AccelLPF" values="184"/>
-            <field name="VTX_Ch" values="1"/>
+            <field name="VTX_Ch" values="BoscamACh1 (5725)"/>
             <field name="Magnetometer" values="Internal"/>
             <field name="ExtMagOrientation" values="Top0degCW"/>
         </object>
@@ -86,26 +87,26 @@
             <field name="RollPitchRate" values="0"/>
             <field name="YawRate" values="0"/>
         </object>
-        <object id="0xCC4A79BC" name="ManualControlSettings">
+        <object id="0xE69AD878" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="248"/>
             <field name="RssiMin" values="0"/>
-            <field name="ChannelMin" values="984,984,2016,984,984,0,0,0,0,0"/>
-            <field name="ChannelNeutral" values="1004,1502,1502,1485,1502,-1,-1,-1,-1,-1"/>
-            <field name="ChannelMax" values="2016,2016,984,2016,2016,0,0,0,0,0"/>
+            <field name="ChannelMin" values="984,984,2016,984,984,0,984,984,984,0"/>
+            <field name="ChannelNeutral" values="1004,1501,1501,1497,1501,-1,1501,1501,1501,-1"/>
+            <field name="ChannelMax" values="2016,2016,984,2016,2016,0,2016,2016,2016,0"/>
             <field name="ArmedTimeout" values="30000"/>
             <field name="ChannelGroups" values="OpenLRS,OpenLRS,OpenLRS,OpenLRS,OpenLRS,None,OpenLRS,OpenLRS,OpenLRS,None"/>
             <field name="RssiType" values="OpenLRS"/>
             <field name="RssiChannelNumber" values="0"/>
             <field name="ChannelNumber" values="1,2,3,4,5,0,6,7,8,0"/>
-            <field name="Arming" values="Yaw Right"/>
+            <field name="Arming" values="Yaw Right+Throttle"/>
             <field name="ArmTime" values="250"/>
             <field name="DisarmTime" values="250"/>
             <field name="Stabilization1Settings" values="Attitude,Attitude,AxisLock"/>
             <field name="Stabilization2Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization3Settings" values="Rate,Rate,Rate"/>
             <field name="FlightModeNumber" values="3"/>
-            <field name="FlightModePosition" values="Acro,Leveling,Autotune,AltitudeHold,PositionHold,Manual"/>
+            <field name="FlightModePosition" values="AcroPlus,Leveling,Autotune,AltitudeHold,PositionHold,Manual"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
@@ -133,8 +134,8 @@
             <field name="Mixer10Type" values="Disabled"/>
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
-        <object id="0x63F2079A" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Enabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+        <object id="0x48A5C4" name="ModuleSettings">
+            <field name="AdminState" values="Disabled,Disabled,Enabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="57600"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -169,22 +170,22 @@
             <field name="AccelBias" values="0,0,0"/>
             <field name="AccelScale" values="1,1,1"/>
             <field name="GyroScale" values="1,1,1"/>
-            <field name="XGyroTempCoeff" values="0.482520014,0,0,0"/>
-            <field name="YGyroTempCoeff" values="0.751020014,0,0,0"/>
-            <field name="ZGyroTempCoeff" values="1.28374004,0,0,0"/>
+            <field name="XGyroTempCoeff" values="0.482849985,0,0,0"/>
+            <field name="YGyroTempCoeff" values="0.437759995,0,0,0"/>
+            <field name="ZGyroTempCoeff" values="0.461959988,0,0,0"/>
             <field name="MagBias" values="0,0,0"/>
             <field name="MagScale" values="1,1,1"/>
-            <field name="ZAccelOffset" values="-0.0525263585"/>
+            <field name="ZAccelOffset" values="0.119011335"/>
         </object>
         <object id="0xCD238D1E" name="StabilizationSettings">
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00211,0.0159200002,1.70000003e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00319000008,0.0240199994,2.49999994e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00150000001,0.00200000009,0,0.300000012"/>
+            <field name="PitchRatePID" values="0.00150000001,0.00200000009,0,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="13.8500004,0,50"/>
-            <field name="PitchPI" values="13.8500004,0,50"/>
+            <field name="RollPI" values="2.5,0,50"/>
+            <field name="PitchPI" values="2.5,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -208,7 +209,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="48"/>
+            <field name="DerivativeCutoff" values="20"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -218,20 +219,22 @@
             <field name="AttitudeFilter" values="Complementary"/>
             <field name="NavigationFilter" values="None"/>
         </object>
-        <object id="0xADAFDDF2" name="SystemIdent">
-            <field name="Tau" values="-4.49980593"/>
-            <field name="Beta" values="10.422308,10.0111952,8.5378027"/>
-            <field name="Bias" values="-0.00657181581,0.00115827017,-0.0157359354"/>
-            <field name="Noise" values="65.9037018,538.272339,306.658447"/>
-            <field name="Period" values="2.96700025"/>
+        <object id="0x2DD579BE" name="SubTrimSettings">
+            <field name="Roll" values="0"/>
+            <field name="Pitch" values="0"/>
+        </object>
+        <object id="0x3D3A3E9E" name="SystemIdent">
+            <field name="Tau" values="-4.31242466"/>
+            <field name="Beta" values="10.2670164,10.1584415,7.77488041"/>
+            <field name="Bias" values="-0.0034886396,-0.0126215396,-0.0330153182"/>
+            <field name="Noise" values="46.270546,219.163422,444.983612"/>
+            <field name="Period" values="0"/>
+            <field name="NumAfPredicts" values="29970"/>
+            <field name="NumSpilledPts" values="0"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>
             <field name="AirframeType" values="QuadX"/>
-        </object>
-        <object id="0x4E09A748" name="TrimAnglesSettings">
-            <field name="Roll" values="0"/>
-            <field name="Pitch" values="0"/>
         </object>
     </settings>
 </uavobjects>

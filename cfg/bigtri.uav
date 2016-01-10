@@ -13,7 +13,7 @@
             <field name="ChannelMin" values="1000,1000,1000,1653,1000,1000,1000,1000,1000,1000"/>
             <field name="TimerPwmResolution" values="1MHz,1MHz,1MHz,1MHz,1MHz,1MHz"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
-            <field name="MotorsSpinWhileArmed" values="FALSE"/>
+            <field name="MotorsSpinWhileArmed" values="TRUE"/>
         </object>
         <object id="0x9DB8D0A" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>

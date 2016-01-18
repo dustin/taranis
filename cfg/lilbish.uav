@@ -1,12 +1,12 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="56ff6d064989564951332487" type="a0"/>
-        <firmware date="20151205 19:34" hash="35fabfd7" tag="next"/>
-        <gcs date="20151205" hash="35fabfd7" tag="next"/>
+        <firmware date="20160117 22:23" hash="352cc8b0" tag="autotune-madness"/>
+        <gcs date="20160117" hash="352cc8b0" tag="autotune-madness"/>
     </version>
     <settings>
-        <object id="0x3557036A" name="ActuatorSettings">
-            <field name="MotorInputOutputCurveFit" values="1,0.699999988"/>
+        <object id="0x31385AA2" name="ActuatorSettings">
+            <field name="MotorInputOutputCurveFit" values="0.850000024"/>
             <field name="TimerUpdateFreq" values="0,0,50,50,0,50"/>
             <field name="ChannelMax" values="250,250,250,250,2000,2000,2000,2000,2000,2000"/>
             <field name="ChannelNeutral" values="133,133,133,133,1000,1000,1000,1000,1000,1000"/>
@@ -56,26 +56,26 @@
             <field name="RollPitchRate" values="0"/>
             <field name="YawRate" values="0"/>
         </object>
-        <object id="0xCC4A79BC" name="ManualControlSettings">
+        <object id="0xE69AD878" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
-            <field name="ChannelMin" values="990,991,2015,990,1000,0,991,993,0,0"/>
-            <field name="ChannelNeutral" values="1010,1503,1504,1500,1504,-1,1503,1504,-1,-1"/>
+            <field name="ChannelMin" values="991,990,2015,990,1001,0,990,993,0,0"/>
+            <field name="ChannelNeutral" values="1011,1502,1505,1496,1503,-1,1503,1504,-1,-1"/>
             <field name="ChannelMax" values="2016,2016,991,2016,2006,0,2016,2010,0,0"/>
             <field name="ArmedTimeout" values="30000"/>
             <field name="ChannelGroups" values="PPM,PPM,PPM,PPM,PPM,None,PPM,PPM,None,None"/>
             <field name="RssiType" values="None"/>
             <field name="RssiChannelNumber" values="0"/>
             <field name="ChannelNumber" values="3,1,2,4,5,0,6,7,0,0"/>
-            <field name="Arming" values="Yaw Right"/>
+            <field name="Arming" values="Yaw Right+Throttle"/>
             <field name="ArmTime" values="250"/>
             <field name="DisarmTime" values="250"/>
             <field name="Stabilization1Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization2Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization3Settings" values="Attitude,Attitude,Rate"/>
             <field name="FlightModeNumber" values="3"/>
-            <field name="FlightModePosition" values="AcroPlus,Leveling,Acro,Stabilized3,ReturnToHome,PositionHold"/>
+            <field name="FlightModePosition" values="AcroPlus,Leveling,Leveling,Horizon,ReturnToHome,PositionHold"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
@@ -134,11 +134,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00100000005,0.00359999994,2.7e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00230000005,0.00789999962,5.80000014e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00359999994,0.0121999998,0,0.300000012"/>
-            <field name="RollPI" values="6.10599995,0,50"/>
-            <field name="PitchPI" values="6.10599995,0,50"/>
+            <field name="RollRatePID" values="0.00197999994,0.00978999957,2.20000002e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00343000004,0.0169500001,3.79999983e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00502000004,0.0198199991,4.50000007e-05,0.300000012"/>
+            <field name="RollPI" values="9.06799984,0,50"/>
+            <field name="PitchPI" values="9.06799984,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -162,19 +162,19 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="22"/>
+            <field name="DerivativeCutoff" values="31"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
             <field name="LowThrottleZeroIntegral" values="TRUE"/>
         </object>
+        <object id="0x2DD579BE" name="SubTrimSettings">
+            <field name="Roll" values="0"/>
+            <field name="Pitch" values="0"/>
+        </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="321126400,0,0,0"/>
             <field name="AirframeType" values="QuadX"/>
-        </object>
-        <object id="0x4E09A748" name="TrimAnglesSettings">
-            <field name="Roll" values="0"/>
-            <field name="Pitch" values="0"/>
         </object>
     </settings>
 </uavobjects>

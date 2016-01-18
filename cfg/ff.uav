@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="560035000151343235353635" type="8a"/>
-        <firmware date="20160108 22:03" hash="22482929" tag="next"/>
-        <gcs date="20160108" hash="22482929" tag="next"/>
+        <firmware date="20160116 20:17" hash="a07152e1" tag="autotune-madness"/>
+        <gcs date="20160117" hash="158f30e5" tag="next"/>
     </version>
     <settings>
         <object id="0x3557036A" name="ActuatorSettings">
@@ -710,11 +710,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00240999996,0.0173300002,1.80000006e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00343999988,0.0246699993,2.59999997e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="13.1789999,0,50"/>
-            <field name="PitchPI" values="13.1789999,0,50"/>
+            <field name="RollRatePID" values="0.00225999998,0.00963000022,4.09999993e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00240999996,0.0102599999,4.40000003e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00230000005,0.00820999965,3.09999996e-05,0.300000012"/>
+            <field name="RollPI" values="7.94099998,4.21299982,50"/>
+            <field name="PitchPI" values="7.94099998,4.21299982,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -738,7 +738,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="45"/>
+            <field name="DerivativeCutoff" values="30"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -753,12 +753,12 @@
             <field name="Pitch" values="0"/>
         </object>
         <object id="0x3D3A3E9E" name="SystemIdent">
-            <field name="Tau" values="-4.50895309"/>
-            <field name="Beta" values="10.197649,9.84448338,8.74098301"/>
-            <field name="Bias" values="-0.00468689483,0.00891400594,-0.00149571663"/>
-            <field name="Noise" values="134.783966,410.406738,560.264343"/>
+            <field name="Tau" values="-3.77400947"/>
+            <field name="Beta" values="9.89687824,9.8330965,10.0191593"/>
+            <field name="Bias" values="-0.000696621661,0.00500839949,-0.00227787672"/>
+            <field name="Noise" values="151.165817,54.8645782,3.85902953"/>
             <field name="Period" values="0"/>
-            <field name="NumAfPredicts" values="29781"/>
+            <field name="NumAfPredicts" values="29863"/>
             <field name="NumSpilledPts" values="0"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">

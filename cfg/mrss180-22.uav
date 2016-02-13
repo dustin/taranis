@@ -58,7 +58,7 @@
             <field name="GyroRange" values="2000"/>
             <field name="AccelRange" values="8G"/>
             <field name="MPU9150DLPF" values="188"/>
-            <field name="MPU9150Rate" values="666"/>
+            <field name="MPU9150Rate" values="500"/>
             <field name="Magnetometer" values="Internal"/>
             <field name="ExtMagOrientation" values="Top0degCW"/>
         </object>
@@ -157,11 +157,11 @@
             <field name="ManualRate" values="720,720,420"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00188999996,0.0104400003,2.7e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00240000011,0.0132600004,3.50000009e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00224000006,0.00992999971,2.59999997e-05,0.300000012"/>
-            <field name="RollPI" values="10.1750002,0,50"/>
-            <field name="PitchPI" values="10.1750002,0,50"/>
+            <field name="RollRatePID" values="0.00184000004,0.00942000002,2.90000007e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00240999996,0.0123199997,3.79999983e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00225999998,0.00922999997,2.80000004e-05,0.300000012"/>
+            <field name="RollPI" values="9.40400028,5.29500008,50"/>
+            <field name="PitchPI" values="9.40400028,5.29500008,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -186,7 +186,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="37"/>
+            <field name="DerivativeCutoff" values="34"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
@@ -201,14 +201,14 @@
             <field name="Pitch" values="0"/>
         </object>
         <object id="0xF82E4E84" name="SystemIdent">
-            <field name="Tau" values="-3.92669249"/>
-            <field name="Beta" values="10.4254656,10.186224,10.2963476"/>
-            <field name="Bias" values="0.00149233383,-0.00956695061,0.00295565231"/>
-            <field name="Noise" values="9.15891361,4.7447629,1.60092008"/>
+            <field name="Tau" values="-3.85329938"/>
+            <field name="Beta" values="10.3661776,10.0981884,10.2070255"/>
+            <field name="Bias" values="0.00203672238,-0.0117579848,0.00460548094"/>
+            <field name="Noise" values="8.75844097,3.66121817,2.05765343"/>
             <field name="Period" values="0"/>
             <field name="NumAfPredicts" values="29958"/>
             <field name="NumSpilledPts" values="0"/>
-            <field name="HoverThrottle" values="0.215399995"/>
+            <field name="HoverThrottle" values="0.243999988"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">
             <field name="AirframeCategorySpecificConfiguration" values="874577920,0,0,0"/>

@@ -118,7 +118,7 @@
         </object>
         <object id="0x150041AA" name="ModuleSettings">
             <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
-            <field name="TelemetrySpeed" values="115200"/>
+            <field name="TelemetrySpeed" values="57600"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
             <field name="GPSAutoConfigure" values="TRUE"/>
@@ -147,9 +147,9 @@
             <field name="ManualRate" values="800,800,800"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
-            <field name="PitchRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
-            <field name="YawRatePID" values="0.00150000001,0.00150000001,0,0.300000012"/>
+            <field name="RollRatePID" values="0.00100000005,0.00100000005,0,0.300000012"/>
+            <field name="PitchRatePID" values="0.000899999985,0.000699999975,0,0.300000012"/>
+            <field name="YawRatePID" values="0.000600000028,0.000600000028,0,0.300000012"/>
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>

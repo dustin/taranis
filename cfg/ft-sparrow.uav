@@ -25,7 +25,7 @@
             <field name="AccelTau" values="0.100000001"/>
             <field name="VertPositionTau" values="2"/>
             <field name="YawBiasRate" values="9.99999997e-07"/>
-            <field name="BoardRotation" values="96,1291,18000"/>
+            <field name="BoardRotation" values="250,1305,18000"/>
             <field name="ZeroDuringArming" values="TRUE"/>
             <field name="BiasCorrectGyro" values="TRUE"/>
             <field name="FilterChoice" values="CCC"/>
@@ -59,7 +59,7 @@
             <field name="RcvrPort" values="Serial"/>
             <field name="RcvrSerial" values="HoTT SUMD"/>
             <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="1000"/>
+            <field name="GyroRange" values="2000"/>
             <field name="AccelRange" values="8G"/>
             <field name="MPU6050Rate" values="333"/>
             <field name="MPU6050DLPF" values="188"/>
@@ -136,20 +136,20 @@
             <field name="AccelBias" values="0,0,0"/>
             <field name="AccelScale" values="1,1,1"/>
             <field name="GyroScale" values="1,1,1"/>
-            <field name="XGyroTempCoeff" values="-1.70594001,0,0,0"/>
-            <field name="YGyroTempCoeff" values="0.499669999,0,0,0"/>
-            <field name="ZGyroTempCoeff" values="-1.10363996,0,0,0"/>
+            <field name="XGyroTempCoeff" values="-1.76214004,0,0,0"/>
+            <field name="YGyroTempCoeff" values="0.519649982,0,0,0"/>
+            <field name="ZGyroTempCoeff" values="-1.30980003,0,0,0"/>
             <field name="MagBias" values="0,0,0"/>
             <field name="MagScale" values="1,1,1"/>
             <field name="ZAccelOffset" values="0"/>
         </object>
         <object id="0xAFCF3BD4" name="StabilizationSettings">
-            <field name="ManualRate" values="150,150,150"/>
+            <field name="ManualRate" values="800,800,800"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
             <field name="RollRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
             <field name="PitchRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
-            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
+            <field name="YawRatePID" values="0.00150000001,0.00150000001,0,0.300000012"/>
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>

@@ -261,7 +261,7 @@
             <field name="Cpu" values="Disabled"/>
             <field name="CpuFont" values="Small"/>
             <field name="CpuAlign" values="Left"/>
-            <field name="CustomText" values="Disabled"/>
+            <field name="CustomText" values="Enabled"/>
             <field name="CustomTextFont" values="Small"/>
             <field name="CustomTextAlign" values="Left"/>
             <field name="FlightMode" values="Enabled"/>
@@ -406,7 +406,7 @@
             <field name="Cpu" values="Disabled"/>
             <field name="CpuFont" values="Small"/>
             <field name="CpuAlign" values="Left"/>
-            <field name="CustomText" values="Disabled"/>
+            <field name="CustomText" values="Enabled"/>
             <field name="CustomTextFont" values="Small"/>
             <field name="CustomTextAlign" values="Left"/>
             <field name="FlightMode" values="Enabled"/>
@@ -764,7 +764,7 @@
             <field name="PageConfig" values="Custom1,Custom2,Menu,Custom1,Custom1,Custom1"/>
             <field name="DisableMenuWhenArmed" values="Enabled"/>
             <field name="RssiWarnThreshold" values="50"/>
-            <field name="CustomText" values="66,114,97,105,110,70,80,86,32,32"/>
+            <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
             <field name="StatsDisplayDuration" values="20s"/>
             <field name="PALXScale" values="7"/>
             <field name="NTSCXScale" values="8"/>

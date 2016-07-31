@@ -232,14 +232,14 @@
             <field name="AltitudeScale" values="Enabled"/>
             <field name="AltitudeScaleAlign" values="Right"/>
             <field name="AltitudeScaleSource" values="Baro"/>
-            <field name="AltitudeNumeric" values="Disabled"/>
+            <field name="AltitudeNumeric" values="Enabled"/>
             <field name="AltitudeNumericAlign" values="Left"/>
             <field name="AltitudeNumericFont" values="Small"/>
             <field name="AltitudeNumericSource" values="Baro"/>
             <field name="ArmStatus" values="Enabled"/>
             <field name="ArmStatusFont" values="Small"/>
             <field name="ArmStatusAlign" values="Left"/>
-            <field name="ArtificialHorizon" values="Enabled"/>
+            <field name="ArtificialHorizon" values="Disabled"/>
             <field name="ArtificialHorizonMaxPitch" values="30"/>
             <field name="ArtificialHorizonPitchSteps" values="2"/>
             <field name="BatteryVolt" values="Enabled"/>
@@ -253,10 +253,10 @@
             <field name="BatteryConsumedAlign" values="Right"/>
             <field name="BatteryChargeState" values="Enabled"/>
             <field name="CenterMark" values="Middle"/>
-            <field name="ClimbRate" values="Enabled"/>
+            <field name="ClimbRate" values="Disabled"/>
             <field name="ClimbRateFont" values="Small"/>
             <field name="ClimbRateAlign" values="Right"/>
-            <field name="Compass" values="Enabled"/>
+            <field name="Compass" values="Disabled"/>
             <field name="CompassHomeDir" values="Enabled"/>
             <field name="Cpu" values="Disabled"/>
             <field name="CpuFont" values="Small"/>
@@ -290,7 +290,7 @@
             <field name="MapShowWp" values="Disabled"/>
             <field name="MapShowUavHome" values="Enabled"/>
             <field name="MapShowTablet" values="Disabled"/>
-            <field name="Rssi" values="Enabled"/>
+            <field name="Rssi" values="Disabled"/>
             <field name="RssiFont" values="Small"/>
             <field name="RssiShowIcon" values="Enabled"/>
             <field name="SpeedScale" values="Enabled"/>
@@ -303,14 +303,14 @@
             <field name="Time" values="Enabled"/>
             <field name="TimeFont" values="Small"/>
             <field name="TimeAlign" values="Right"/>
-            <field name="Throttle" values="Disabled"/>
+            <field name="Throttle" values="Enabled"/>
             <field name="ThrottleFont" values="Small"/>
             <field name="ThrottleAlign" values="Right"/>
-            <field name="VTXFreq" values="Enabled"/>
+            <field name="VTXFreq" values="Disabled"/>
             <field name="VTXFreqFont" values="Small"/>
             <field name="VTXFreqAlign" values="Right"/>
             <field name="VTXFreqShowUnit" values="Enabled"/>
-            <field name="VTXPower" values="Enabled"/>
+            <field name="VTXPower" values="Disabled"/>
             <field name="VTXPowerFont" values="Small"/>
             <field name="VTXPowerAlign" values="Right"/>
             <field name="VTXPowerShowUnit" values="Enabled"/>
@@ -759,12 +759,12 @@
             <field name="NTSCBlack" values="20"/>
             <field name="XOffset" values="0"/>
             <field name="YOffset" values="0"/>
-            <field name="NumPages" values="2"/>
+            <field name="NumPages" values="3"/>
             <field name="PageSwitch" values="Accessory0"/>
-            <field name="PageConfig" values="Custom1,Custom1,Custom1,Custom1,Custom1,Custom1"/>
+            <field name="PageConfig" values="Custom1,Custom2,Menu,Custom1,Custom1,Custom1"/>
             <field name="DisableMenuWhenArmed" values="Enabled"/>
             <field name="RssiWarnThreshold" values="50"/>
-            <field name="CustomText" values="66,114,97,105,110,70,80,86,0,0"/>
+            <field name="CustomText" values="66,114,97,105,110,70,80,86,32,32"/>
             <field name="StatsDisplayDuration" values="20s"/>
             <field name="PALXScale" values="7"/>
             <field name="NTSCXScale" values="8"/>

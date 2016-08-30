@@ -1,6 +1,6 @@
 <uavobjects>
     <version>
-        <hardware revision="1" serial="2f002f001651343435383538" type="8b"/>
+        <hardware revision="1" serial="48001e001651343435383538" type="8b"/>
         <firmware date="20160723 03:45" hash="74b7422c" tag="Release-20160720.1"/>
         <gcs date="20160723" hash="74b7422c" tag="Release-20160720.1"/>
     </version>
@@ -75,7 +75,7 @@
             <field name="IRIDTrackmate" values="0"/>
             <field name="RxPort" values="S.Bus"/>
             <field name="SerialPort" values="Disabled"/>
-            <field name="MultiPort" values="Disabled"/>
+            <field name="MultiPort" values="FrSKY SPort Telemetry"/>
             <field name="DSMxMode" values="Autodetect"/>
             <field name="USB_HIDPort" values="USBTelemetry"/>
             <field name="USB_VCPPort" values="Disabled"/>
@@ -84,9 +84,9 @@
             <field name="IRProtocol" values="Disabled"/>
             <field name="FailsafeBuzzer" values="Disabled"/>
             <field name="HWRevision" values="1"/>
-            <field name="VideoSyncDetectorThreshold" values="120"/>
+            <field name="VideoSyncDetectorThreshold" values="115"/>
             <field name="BMI160FOC" values="Disabled"/>
-            <field name="FlashID" values="255,170,135,153,144,61,232,118,4,78,84,151,217,132,194,65"/>
+            <field name="FlashID" values="255,193,2,68,59,94,142,193,219,124,47,150,91,171,145,131"/>
         </object>
         <object id="0xE2DBC224" name="INSSettings">
             <field name="AccelVar" values="0.00300000003,0.00300000003,0.00300000003"/>
@@ -126,7 +126,7 @@
             <field name="Stabilization2Reprojection" values="None"/>
             <field name="Stabilization3Reprojection" values="None"/>
             <field name="FlightModeNumber" values="2"/>
-            <field name="FlightModePosition" values="AcroPlus,Autotune,Leveling,Horizon,ReturnToHome,PositionHold"/>
+            <field name="FlightModePosition" values="Acro,Autotune,Leveling,Horizon,ReturnToHome,PositionHold"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
@@ -787,14 +787,14 @@
             <field name="ZAccelOffset" values="0"/>
         </object>
         <object id="0xAFCF3BD4" name="StabilizationSettings">
-            <field name="ManualRate" values="720,720,720"/>
+            <field name="ManualRate" values="900,900,900"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.0023476677,0.0137273138,2.61348378e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00293759466,0.0171767436,3.27020571e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00234999997,0.0137299998,2.59999997e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00294000003,0.0171799995,3.30000003e-05,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="10.745924,8.37138271,50"/>
-            <field name="PitchPI" values="10.745924,8.37138271,50"/>
+            <field name="RollPI" values="10.7460003,8.37100029,50"/>
+            <field name="PitchPI" values="10.7460003,8.37100029,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -810,7 +810,7 @@
             <field name="RollMax" values="55"/>
             <field name="PitchMax" values="55"/>
             <field name="YawMax" values="35"/>
-            <field name="RateExpo" values="75,75,75"/>
+            <field name="RateExpo" values="77,77,77"/>
             <field name="AttitudeExpo" values="0,0,0"/>
             <field name="HorizonExpo" values="30,30,30"/>
             <field name="VbarGyroSuppress" values="30"/>

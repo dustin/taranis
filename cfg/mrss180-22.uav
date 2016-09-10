@@ -1,13 +1,13 @@
 <uavobjects>
     <version>
         <hardware revision="2" serial="1f001f000157325237313620" type="88"/>
-        <firmware date="20160812 18:19" hash="8d7690c9" tag="next"/>
-        <gcs date="20160812" hash="8d7690c9" tag="next"/>
+        <firmware date="20160909 22:54" hash="4f2880ce" tag="next"/>
+        <gcs date="20160909" hash="4f2880ce" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
             <field name="LowPowerStabilizationMaxPowerAdd" values="0.0799999982"/>
-            <field name="LowPowerStabilizationMaxTime" values="2.5"/>
+            <field name="LowPowerStabilizationMaxTime" values="4.5"/>
             <field name="MotorInputOutputCurveFit" values="0.769999981"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,0,0,0,0,0,0"/>
@@ -100,7 +100,7 @@
             <field name="MagBiasNullingRate" values="0"/>
             <field name="ComputeGyroBias" values="FALSE"/>
         </object>
-        <object id="0x7581F6" name="LoggingSettings">
+        <object id="0xC3002CAA" name="LoggingSettings">
             <field name="LogBehavior" values="LogOnArm"/>
             <field name="InitiallyLog" values="AllObjects"/>
             <field name="MaxLogRate" values="25"/>
@@ -133,7 +133,7 @@
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
-            <field name="ThrottleCurve1" values="0,0.0989589319,0.200000003,0.47620821,0.899999976"/>
+            <field name="ThrottleCurve1" values="0,0.0900000036,0.189999998,0.5,0.899999976"/>
             <field name="ThrottleCurve2" values="0,0.224999994,0.449999988,0.674999952,0.899999976"/>
             <field name="Curve2Source" values="Throttle"/>
             <field name="Mixer1Type" values="Motor"/>
@@ -177,7 +177,7 @@
             <field name="PreprogrammedPath" values="NONE"/>
             <field name="FlashOperation" values="NONE"/>
         </object>
-        <object id="0xADB3B106" name="SensorSettings">
+        <object id="0xF511BE26" name="SensorSettings">
             <field name="AccelBias" values="0,0,0"/>
             <field name="AccelScale" values="1,1,1"/>
             <field name="GyroScale" values="1,1,1"/>
@@ -187,16 +187,17 @@
             <field name="MagBias" values="0,0,0"/>
             <field name="MagScale" values="1,1,1"/>
             <field name="ZAccelOffset" values="-0.0257418305"/>
+            <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
-        <object id="0xAFCF3BD4" name="StabilizationSettings">
-            <field name="ManualRate" values="720,720,720"/>
+        <object id="0x3B01F9E" name="StabilizationSettings">
+            <field name="ManualRate" values="900,900,900"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00246000011,0.0115499999,4.09999993e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00168999995,0.00793999992,2.80000004e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00227000006,0.00853999984,2.99999992e-05,0.300000012"/>
-            <field name="RollPI" values="8.64999962,4.56899977,50"/>
-            <field name="PitchPI" values="8.64999962,4.56899977,50"/>
+            <field name="RollRatePID" values="0.00258000009,0.0126900002,3.89999987e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00178000005,0.00875000004,2.7e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00240999996,0.00946000032,2.90000007e-05,0.300000012"/>
+            <field name="RollPI" values="6.6079998,2.55900002,50"/>
+            <field name="PitchPI" values="6.6079998,2.55900002,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -212,17 +213,19 @@
             <field name="RollMax" values="55"/>
             <field name="PitchMax" values="55"/>
             <field name="YawMax" values="35"/>
-            <field name="RateExpo" values="70,70,70"/>
+            <field name="RateExpo" values="77,77,77"/>
             <field name="AttitudeExpo" values="0,0,0"/>
             <field name="HorizonExpo" values="30,30,30"/>
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="32"/>
+            <field name="DerivativeCutoff" values="33"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="5"/>
             <field name="LowThrottleZeroIntegral" values="TRUE"/>
+            <field name="DeadbandWidth" values="0,0,0"/>
+            <field name="DeadbandSlope" values="60,60,50"/>
         </object>
         <object id="0xBA09F7C2" name="StateEstimation">
             <field name="AttitudeFilter" values="Complementary"/>
@@ -233,14 +236,14 @@
             <field name="Pitch" values="0"/>
         </object>
         <object id="0xB2A62596" name="SystemIdent">
-            <field name="Tau" values="-3.79000545"/>
-            <field name="Beta" values="9.97970867,10.354722,10.1105537"/>
-            <field name="Bias" values="-0.00200369791,-0.00217685243,0.0113634607"/>
-            <field name="Noise" values="56.8725853,3.98257399,4.24818945"/>
+            <field name="Tau" values="-3.8851347"/>
+            <field name="Beta" values="9.9315443,10.3025742,10.0487938"/>
+            <field name="Bias" values="0.00489254529,-0.00540813757,0.0103863236"/>
+            <field name="Noise" values="135.247406,2.681108,8.57770252"/>
             <field name="Period" values="0"/>
-            <field name="NumAfPredicts" values="29951"/>
+            <field name="NumAfPredicts" values="29952"/>
             <field name="NumSpilledPts" values="0"/>
-            <field name="HoverThrottle" values="0.200399995"/>
+            <field name="HoverThrottle" values="0.1919"/>
             <field name="NewTune" values="FALSE"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">

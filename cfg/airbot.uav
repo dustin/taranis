@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20160913 09:21" hash="4a946840" tag="ab7456"/>
-        <gcs date="20160913" hash="4a946840" tag="ab7456"/>
+        <firmware date="20160914 06:31" hash="4c0a0730" tag="ab7456"/>
+        <gcs date="20160914" hash="4c0a0730" tag="ab7456"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -49,21 +49,21 @@
             <field name="InputFilter" values="0"/>
             <field name="FeedForwardTime" values="0"/>
         </object>
-        <object id="0xC2A705B4" name="CharOnScreenDisplaySettings">
+        <object id="0x3B041C4" name="CharOnScreenDisplaySettings">
             <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
-            <field name="PanelType" values="Disabled,Disabled,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
-            <field name="X" values="1,8,19,0,21,3,1,8,23,1,23,1,22,9,1,1,12,23,1,0,0,0,0,0"/>
-            <field name="Y" values="1,1,1,0,3,0,9,6,1,8,8,10,10,12,12,12,12,12,11,0,0,0,0,0"/>
+            <field name="PanelType" values="Crosshair,Disabled,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="X" values="14,8,19,0,21,3,1,8,23,1,23,1,22,9,1,1,12,23,1,0,0,0,0,0"/>
+            <field name="Y" values="6,1,1,0,3,0,9,6,1,8,8,10,10,12,12,12,12,12,11,0,0,0,0,0"/>
         </object>
         <object id="0x7761C4DA" name="FlightBatterySettings">
             <field name="MaxCellVoltage" values="4.19999981"/>
-            <field name="Capacity" values="2200"/>
+            <field name="Capacity" values="1000"/>
             <field name="CellVoltageThresholds" values="3.5,3.29999995"/>
             <field name="SensorCalibrationFactor" values="90.9091034,36.5999985"/>
             <field name="SensorCalibrationOffset" values="0,0"/>
             <field name="CurrentPin" values="ADC0"/>
             <field name="VoltagePin" values="ADC1"/>
-            <field name="NbCells" values="3"/>
+            <field name="NbCells" values="4"/>
             <field name="FlightTimeThresholds" values="120,30"/>
         </object>
         <object id="0xDF5EA7FE" name="GeoFenceSettings">
@@ -256,12 +256,12 @@
             <field name="Pitch" values="0"/>
         </object>
         <object id="0xB2A62596" name="SystemIdent">
-            <field name="Tau" values="-1.72505951"/>
-            <field name="Beta" values="9.92590714,9.99262905,6.59535551"/>
-            <field name="Bias" values="-0.00484170998,-0.00456126407,0.0619055144"/>
-            <field name="Noise" values="0.155178472,0.0963997245,18.1776791"/>
-            <field name="Period" values="1.00100005"/>
-            <field name="NumAfPredicts" values="6145"/>
+            <field name="Tau" values="0"/>
+            <field name="Beta" values="0,0,0"/>
+            <field name="Bias" values="0,0,0"/>
+            <field name="Noise" values="0,0,0"/>
+            <field name="Period" values="0"/>
+            <field name="NumAfPredicts" values="0"/>
             <field name="NumSpilledPts" values="0"/>
             <field name="HoverThrottle" values="0"/>
             <field name="NewTune" values="FALSE"/>

@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20160914 06:31" hash="4c0a0730" tag="ab7456"/>
-        <gcs date="20160914" hash="4c0a0730" tag="ab7456"/>
+        <firmware date="20160916 02:26" hash="2cdaf74c" tag="ab7456-dirty"/>
+        <gcs date="20160916" hash="2cdaf74c" tag="ab7456"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -49,11 +49,12 @@
             <field name="InputFilter" values="0"/>
             <field name="FeedForwardTime" values="0"/>
         </object>
-        <object id="0x3B041C4" name="CharOnScreenDisplaySettings">
+        <object id="0x9CACA98C" name="CharOnScreenDisplaySettings">
             <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
-            <field name="PanelType" values="Crosshair,Disabled,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
-            <field name="X" values="14,8,19,0,21,3,1,8,23,1,23,1,22,9,1,1,12,23,1,0,0,0,0,0"/>
-            <field name="Y" values="6,1,1,0,3,0,9,6,1,8,8,10,10,12,12,12,12,12,11,0,0,0,0,0"/>
+            <field name="Font" values="Regular"/>
+            <field name="PanelType" values="Crosshair,Alarms,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="X" values="14,31,19,0,21,3,1,8,23,1,23,1,22,9,1,1,12,23,1,0,0,0,0,0"/>
+            <field name="Y" values="6,8,1,0,3,0,9,6,1,8,8,10,10,12,12,12,12,12,11,0,0,0,0,0"/>
         </object>
         <object id="0x7761C4DA" name="FlightBatterySettings">
             <field name="MaxCellVoltage" values="4.19999981"/>
@@ -79,7 +80,7 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0x5B83AF8" name="HwRevolution">
+        <object id="0xB4B55CEC" name="HwRevolution">
             <field name="CoordID" values="0"/>
             <field name="RxPort" values="PWM"/>
             <field name="MainPort" values="S.Bus"/>
@@ -88,6 +89,7 @@
             <field name="USB_HIDPort" values="USBTelemetry"/>
             <field name="USB_VCPPort" values="Disabled"/>
             <field name="DSMxMode" values="Autodetect"/>
+            <field name="SPIPeripheral" values="MAX7456 OSD"/>
             <field name="Radio" values="Disabled"/>
             <field name="MaxRfSpeed" values="64000"/>
             <field name="MaxRfPower" values="0"/>
@@ -143,7 +145,7 @@
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
-            <field name="ThrottleCurve1" values="0,0.224999994,0.449999988,0.675000012,0.899999976"/>
+            <field name="ThrottleCurve1" values="0,0.109999999,0.230000004,0.486618876,0.899999976"/>
             <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
             <field name="Curve2Source" values="Throttle"/>
             <field name="Mixer1Type" values="Motor"/>
@@ -212,11 +214,11 @@
             <field name="ManualRate" values="900,900,900"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
-            <field name="PitchRatePID" values="0.00200000009,0.00150000001,0,0.300000012"/>
-            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="2.5,0,50"/>
-            <field name="PitchPI" values="2.5,0,50"/>
+            <field name="RollRatePID" values="0.00215879572,0.00859980099,3.17605227e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00323861977,0.0129013993,4.76470523e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00192409137,0.00613186462,2.26460143e-05,0.300000012"/>
+            <field name="RollPI" values="6.65545654,0,50"/>
+            <field name="PitchPI" values="6.65545654,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
@@ -239,7 +241,7 @@
             <field name="VbarGyroSuppress" values="30"/>
             <field name="VbarPiroComp" values="FALSE"/>
             <field name="VbarMaxAngle" values="10"/>
-            <field name="DerivativeCutoff" values="20"/>
+            <field name="DerivativeCutoff" values="25"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="45"/>
@@ -256,14 +258,14 @@
             <field name="Pitch" values="0"/>
         </object>
         <object id="0xB2A62596" name="SystemIdent">
-            <field name="Tau" values="0"/>
-            <field name="Beta" values="0,0,0"/>
-            <field name="Bias" values="0,0,0"/>
-            <field name="Noise" values="0,0,0"/>
+            <field name="Tau" values="-3.87481666"/>
+            <field name="Beta" values="9.75281811,9.34722137,9.94464588"/>
+            <field name="Bias" values="-0.0107610701,-0.00800136384,0.00736933947"/>
+            <field name="Noise" values="74.8502884,181.32196,5.32248592"/>
             <field name="Period" values="0"/>
-            <field name="NumAfPredicts" values="0"/>
+            <field name="NumAfPredicts" values="59936"/>
             <field name="NumSpilledPts" values="0"/>
-            <field name="HoverThrottle" values="0"/>
+            <field name="HoverThrottle" values="0.226599991"/>
             <field name="NewTune" values="FALSE"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">

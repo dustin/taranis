@@ -214,11 +214,11 @@
             <field name="ManualRate" values="900,900,900"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00215879572,0.00859980099,3.17605227e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00323861977,0.0129013993,4.76470523e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.00192409137,0.00613186462,2.26460143e-05,0.300000012"/>
-            <field name="RollPI" values="6.65545654,0,50"/>
-            <field name="PitchPI" values="6.65545654,0,50"/>
+            <field name="RollRatePID" values="0.00215999992,0.00860000029,3.19999999e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00323999999,0.0129000004,4.80000017e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00191999995,0.00613000011,2.30000005e-05,0.300000012"/>
+            <field name="RollPI" values="6.65500021,0,50"/>
+            <field name="PitchPI" values="6.65500021,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
             <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>

@@ -1,13 +1,13 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20160916 02:26" hash="2cdaf74c" tag="ab7456-dirty"/>
+        <firmware date="20160916 03:06" hash="640f5f07" tag="ab7456-dirty"/>
         <gcs date="20160916" hash="2cdaf74c" tag="ab7456"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
-            <field name="LowPowerStabilizationMaxPowerAdd" values="0.0700000003"/>
-            <field name="LowPowerStabilizationMaxTime" values="0"/>
+            <field name="LowPowerStabilizationMaxPowerAdd" values="0.119999997"/>
+            <field name="LowPowerStabilizationMaxTime" values="4.5"/>
             <field name="MotorInputOutputCurveFit" values="0.800000012"/>
             <field name="TimerUpdateFreq" values="0,0,0,50,50,50"/>
             <field name="ChannelMax" values="250,250,250,250,0,0,0,0,0,0"/>

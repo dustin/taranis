@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20160930 21:32" hash="dd27a7f8" tag="next"/>
-        <gcs date="20160930" hash="dd27a7f8" tag="next"/>
+        <firmware date="20161001 20:34" hash="bbf2bd1a" tag="acrodyne"/>
+        <gcs date="20161001" hash="bbf2bd1a" tag="acrodyne"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -54,7 +54,7 @@
             <field name="FeedForwardTime" values="0"/>
         </object>
         <object id="0xCA616496" name="CharOnScreenDisplaySettings">
-            <field name="VideoStandard" values="Autodetect-Prefer PAL"/>
+            <field name="VideoStandard" values="Autodetect-Prefer NTSC"/>
             <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
             <field name="Font" values="Regular"/>
             <field name="PanelType" values="Crosshair,Alarms,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
@@ -123,7 +123,7 @@
             <field name="MaxLogRate" values="50"/>
             <field name="Profile" values="Fullbore"/>
         </object>
-        <object id="0xB1E043B0" name="ManualControlSettings">
+        <object id="0x44142244" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
@@ -131,7 +131,7 @@
             <field name="ChannelNeutral" values="204,987,995,992,1484,-1,992,-1,-1,643"/>
             <field name="ChannelMax" values="1811,1811,172,1811,1811,0,1811,0,0,1811"/>
             <field name="ArmedTimeout" values="10000"/>
-            <field name="InvalidRXArmedTimeout" values="0"/>
+            <field name="InvalidRXArmedTimeout" values="5000"/>
             <field name="ChannelGroups" values="S.Bus,S.Bus,S.Bus,S.Bus,S.Bus,None,S.Bus,None,None,S.Bus"/>
             <field name="RssiType" values="ADC"/>
             <field name="RssiChannelNumber" values="1"/>
@@ -139,14 +139,14 @@
             <field name="Arming" values="Switch+Throttle+Delay"/>
             <field name="ArmTime" values="1000"/>
             <field name="DisarmTime" values="1000"/>
-            <field name="Stabilization1Settings" values="Attitude,Attitude,Rate"/>
+            <field name="Stabilization1Settings" values="Acrodyne,Acrodyne,Rate"/>
             <field name="Stabilization2Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization3Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization1Reprojection" values="None"/>
             <field name="Stabilization2Reprojection" values="None"/>
             <field name="Stabilization3Reprojection" values="None"/>
             <field name="FlightModeNumber" values="2"/>
-            <field name="FlightModePosition" values="Acro,Autotune,Leveling,Horizon,ReturnToHome,PositionHold"/>
+            <field name="FlightModePosition" values="Acro,Stabilized1,Leveling,Horizon,ReturnToHome,PositionHold"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
@@ -175,7 +175,7 @@
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object id="0xA35EB43E" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Enabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="115200"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>

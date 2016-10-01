@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20160916 03:06" hash="640f5f07" tag="ab7456-dirty"/>
-        <gcs date="20160916" hash="2cdaf74c" tag="ab7456"/>
+        <firmware date="20160930 21:32" hash="dd27a7f8" tag="next"/>
+        <gcs date="20160930" hash="dd27a7f8" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -22,6 +22,10 @@
             <field name="GPSSamplePeriod_ms" values="100"/>
             <field name="AirspeedSensorType" values="GPSOnly"/>
             <field name="AnalogPin" values="NONE"/>
+        </object>
+        <object id="0x84531EBC" name="AnnunciatorSettings">
+            <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire"/>
+            <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly"/>
         </object>
         <object id="0x9DB8D0A" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
@@ -49,7 +53,8 @@
             <field name="InputFilter" values="0"/>
             <field name="FeedForwardTime" values="0"/>
         </object>
-        <object id="0x9CACA98C" name="CharOnScreenDisplaySettings">
+        <object id="0xCA616496" name="CharOnScreenDisplaySettings">
+            <field name="VideoStandard" values="Autodetect-Prefer PAL"/>
             <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
             <field name="Font" values="Regular"/>
             <field name="PanelType" values="Crosshair,Alarms,Disabled,ArmedFlag,Disabled,FlightMode,Pitch,Disabled,Throttle,Disabled,Disabled,Roll,FlightTime,Disabled,Disabled,BatteryVolt,BatteryCurrent,BatteryConsumed,Callsign,Disabled,Disabled,Disabled,Disabled,Disabled"/>
@@ -82,7 +87,7 @@
         </object>
         <object id="0xB4B55CEC" name="HwRevolution">
             <field name="CoordID" values="0"/>
-            <field name="RxPort" values="PWM"/>
+            <field name="RxPort" values="Disabled"/>
             <field name="MainPort" values="S.Bus"/>
             <field name="FlexiPort" values="Disabled"/>
             <field name="RxPortUsart" values="Disabled"/>

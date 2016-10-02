@@ -825,14 +825,14 @@
             <field name="ComSpeed" values="115200"/>
         </object>
         <object id="0xF511BE26" name="SensorSettings">
-            <field name="AccelBias" values="0,0,0"/>
-            <field name="AccelScale" values="1,1,1"/>
+            <field name="AccelBias" values="0.0832048953,-0.11400833,0.373414546"/>
+            <field name="AccelScale" values="1.00060296,0.999945998,0.991595685"/>
             <field name="GyroScale" values="1,1,1"/>
             <field name="XGyroTempCoeff" values="0,0,0,0"/>
             <field name="YGyroTempCoeff" values="0,0,0,0"/>
             <field name="ZGyroTempCoeff" values="0,0,0,0"/>
-            <field name="MagBias" values="0,0,0"/>
-            <field name="MagScale" values="1,1,1"/>
+            <field name="MagBias" values="-1391.55872,2120.59131,1364.57739"/>
+            <field name="MagScale" values="5.54859066,4.70794106,4.92878866"/>
             <field name="ZAccelOffset" values="0"/>
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>

@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="3" serial="5a0035000651353530393937" type="9"/>
-        <firmware date="20161001 20:34" hash="bbf2bd1a" tag="acrodyne"/>
-        <gcs date="20161001" hash="bbf2bd1a" tag="acrodyne"/>
+        <firmware date="20161002 06:51" hash="a9aecaa2" tag="acrodyne"/>
+        <gcs date="20161002" hash="a9aecaa2" tag="acrodyne"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -142,7 +142,7 @@
             <field name="Stabilization1Settings" values="Acrodyne,Acrodyne,Rate"/>
             <field name="Stabilization2Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization3Settings" values="Attitude,Attitude,Rate"/>
-            <field name="Stabilization1Reprojection" values="None"/>
+            <field name="Stabilization1Reprojection" values="CameraAngle"/>
             <field name="Stabilization2Reprojection" values="None"/>
             <field name="Stabilization3Reprojection" values="None"/>
             <field name="FlightModeNumber" values="2"/>
@@ -216,7 +216,7 @@
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
         <object id="0x84DE69E2" name="StabilizationSettings">
-            <field name="ManualRate" values="900,900,900"/>
+            <field name="ManualRate" values="850,850,850"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
             <field name="RollRatePID" values="0.00215999992,0.00860000029,3.19999999e-05,0.300000012"/>
@@ -235,7 +235,7 @@
             <field name="WeakLevelingKp" values="0.330000013"/>
             <field name="CoordinatedFlightYawPI" values="0,0.100000001,0.5"/>
             <field name="AcroInsanityFactor" values="40"/>
-            <field name="CameraTilt" values="0"/>
+            <field name="CameraTilt" values="43"/>
             <field name="MaxLevelAngle" values="55,55,35"/>
             <field name="RollMax" values="55"/>
             <field name="PitchMax" values="55"/>

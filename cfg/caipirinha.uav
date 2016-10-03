@@ -11,7 +11,7 @@
             <field name="MotorInputOutputCurveFit" values="0.899999976"/>
             <field name="TimerUpdateFreq" values="50,50,50,0,0,0"/>
             <field name="ChannelMax" values="2000,1680,1309,0,0,0,0,0,0,0"/>
-            <field name="ChannelNeutral" values="1000,1356,1633,0,0,0,0,0,0,0"/>
+            <field name="ChannelNeutral" values="1000,1356,1602,0,0,0,0,0,0,0"/>
             <field name="ChannelMin" values="1000,1080,1771,0,0,0,0,0,0,0"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
             <field name="MotorsSpinWhileArmed" values="FALSE"/>
@@ -145,11 +145,11 @@
         </object>
         <object id="0xB1E043B0" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
-            <field name="RssiMax" values="2000"/>
-            <field name="RssiMin" values="635"/>
+            <field name="RssiMax" values="16128"/>
+            <field name="RssiMin" values="7872"/>
             <field name="ChannelMin" values="7872,7872,16128,7872,7872,0,7872,7872,7872,7872"/>
-            <field name="ChannelNeutral" values="8037,12008,12040,12008,12000,-1,7872,7872,7872,8188"/>
-            <field name="ChannelMax" values="16128,16128,7872,16128,16128,0,7872,7872,7872,16128"/>
+            <field name="ChannelNeutral" values="8037,12008,12040,12008,12000,-1,12000,12000,12000,8188"/>
+            <field name="ChannelMax" values="16128,16128,7872,16128,16128,0,16128,16128,16128,16128"/>
             <field name="ArmedTimeout" values="0"/>
             <field name="InvalidRXArmedTimeout" values="5000"/>
             <field name="ChannelGroups" values="HoTT SUM,HoTT SUM,HoTT SUM,HoTT SUM,HoTT SUM,None,HoTT SUM,HoTT SUM,HoTT SUM,HoTT SUM"/>

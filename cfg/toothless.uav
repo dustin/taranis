@@ -280,7 +280,7 @@
             <field name="ArmStatusFont" values="Small"/>
             <field name="ArmStatusAlign" values="Left"/>
             <field name="ArtificialHorizon" values="Enabled"/>
-            <field name="ArtificialHorizonMaxPitch" values="10"/>
+            <field name="ArtificialHorizonMaxPitch" values="39"/>
             <field name="ArtificialHorizonPitchSteps" values="9"/>
             <field name="BatteryVolt" values="Enabled"/>
             <field name="BatteryVoltFont" values="Small"/>
@@ -425,8 +425,8 @@
             <field name="ArmStatusFont" values="Small"/>
             <field name="ArmStatusAlign" values="Left"/>
             <field name="ArtificialHorizon" values="Enabled"/>
-            <field name="ArtificialHorizonMaxPitch" values="10"/>
-            <field name="ArtificialHorizonPitchSteps" values="3"/>
+            <field name="ArtificialHorizonMaxPitch" values="39"/>
+            <field name="ArtificialHorizonPitchSteps" values="1"/>
             <field name="BatteryVolt" values="Enabled"/>
             <field name="BatteryVoltFont" values="Small"/>
             <field name="BatteryVoltAlign" values="Right"/>
@@ -795,7 +795,7 @@
             <field name="Units" values="Metric"/>
             <field name="PALWhite" values="110"/>
             <field name="PALBlack" values="35"/>
-            <field name="NTSCWhite" values="110"/>
+            <field name="NTSCWhite" values="100"/>
             <field name="NTSCBlack" values="20"/>
             <field name="XOffset" values="0"/>
             <field name="YOffset" values="0"/>

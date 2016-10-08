@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="2e001b000c51343231383537" type="8a"/>
-        <firmware date="20160930 21:32" hash="dd27a7f8" tag="next"/>
-        <gcs date="20160930" hash="dd27a7f8" tag="next"/>
+        <firmware date="20161007 18:12" hash="f982febb" tag="next"/>
+        <gcs date="20161007" hash="f982febb" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -110,7 +110,7 @@
             <field name="Be" values="227.676239,54.4287186,421.277496"/>
             <field name="GroundTemperature" values="150"/>
             <field name="SeaLevelPressure" values="1013"/>
-            <field name="Set" values="TRUE"/>
+            <field name="Set" values="FALSE"/>
         </object>
         <object id="0xCC630B28" name="HwBrain">
             <field name="RxPort" values="UART"/>
@@ -141,11 +141,11 @@
             <field name="LogBehavior" values="LogOnArm"/>
             <field name="InitiallyLog" values="AllObjects"/>
             <field name="MaxLogRate" values="25"/>
-            <field name="Profile" values="Fullbore"/>
+            <field name="Profile" values="Basic"/>
         </object>
         <object id="0xB1E043B0" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
-            <field name="RssiMax" values="16128"/>
+            <field name="RssiMax" values="15072"/>
             <field name="RssiMin" values="7872"/>
             <field name="ChannelMin" values="7872,7872,16128,7872,7872,0,7872,7872,7872,7872"/>
             <field name="ChannelNeutral" values="8037,12008,12040,12008,12000,-1,12000,12000,12000,8188"/>
@@ -156,7 +156,7 @@
             <field name="RssiType" values="HoTT SUM"/>
             <field name="RssiChannelNumber" values="9"/>
             <field name="ChannelNumber" values="1,3,2,4,5,0,6,7,8,5"/>
-            <field name="Arming" values="Always Disarmed"/>
+            <field name="Arming" values="Switch+Throttle+Delay"/>
             <field name="ArmTime" values="1000"/>
             <field name="DisarmTime" values="1000"/>
             <field name="Stabilization1Settings" values="WeakLeveling,Rate,Rate"/>
@@ -195,7 +195,7 @@
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object id="0xA35EB43E" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled"/>
+            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled,Enabled"/>
             <field name="TelemetrySpeed" values="115200"/>
             <field name="GPSSpeed" values="38400"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -877,7 +877,7 @@
         </object>
         <object id="0xBA09F7C2" name="StateEstimation">
             <field name="AttitudeFilter" values="Complementary"/>
-            <field name="NavigationFilter" values="Raw"/>
+            <field name="NavigationFilter" values="INS"/>
         </object>
         <object id="0x2DD579BE" name="SubTrimSettings">
             <field name="Roll" values="0"/>

@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="400019000c51343231383537" type="8a"/>
-        <firmware date="20160930 21:32" hash="dd27a7f8" tag="next"/>
-        <gcs date="20160930" hash="dd27a7f8" tag="next"/>
+        <firmware date="20161007 18:12" hash="f982febb" tag="next"/>
+        <gcs date="20161007" hash="f982febb" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -10,9 +10,9 @@
             <field name="LowPowerStabilizationMaxTime" values="0"/>
             <field name="MotorInputOutputCurveFit" values="0.899999976"/>
             <field name="TimerUpdateFreq" values="50,50,50,0,0,0"/>
-            <field name="ChannelMax" values="2000,2000,1000,2000,0,0,0,0,0,0"/>
-            <field name="ChannelNeutral" values="1000,1500,1500,1000,0,0,0,0,0,0"/>
-            <field name="ChannelMin" values="1000,1000,2000,1000,0,0,0,0,0,0"/>
+            <field name="ChannelMax" values="0,2000,1000,2000,0,0,0,0,0,0"/>
+            <field name="ChannelNeutral" values="0,1500,1500,1000,0,0,0,0,0,0"/>
+            <field name="ChannelMin" values="0,1000,2000,1000,0,0,0,0,0,0"/>
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
             <field name="MotorsSpinWhileArmed" values="FALSE"/>
         </object>
@@ -145,7 +145,7 @@
         </object>
         <object id="0xB1E043B0" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
-            <field name="RssiMax" values="16128"/>
+            <field name="RssiMax" values="15776"/>
             <field name="RssiMin" values="7872"/>
             <field name="ChannelMin" values="7872,7872,16128,7872,7872,0,7872,7872,7872,7872"/>
             <field name="ChannelNeutral" values="7900,11992,12016,12016,13566,-1,12016,12016,12016,10213"/>

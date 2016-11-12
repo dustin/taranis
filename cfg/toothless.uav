@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="400019000c51343231383537" type="8a"/>
-        <firmware date="20161007 18:12" hash="f982febb" tag="next"/>
-        <gcs date="20161007" hash="f982febb" tag="next"/>
+        <firmware date="20161107 08:20" hash="aa7af0c0" tag="next"/>
+        <gcs date="20161107" hash="aa7af0c0" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -23,28 +23,17 @@
             <field name="AirspeedSensorType" values="GPSOnly"/>
             <field name="AnalogPin" values="NONE"/>
         </object>
-        <object id="0x96E3903C" name="AltitudeHoldSettings">
-            <field name="PositionKp" values="0.800000012"/>
-            <field name="VelocityKp" values="0.200000003"/>
-            <field name="VelocityKi" values="0.25"/>
-            <field name="AttitudeComp" values="120"/>
-            <field name="MaxClimbRate" values="40"/>
-            <field name="MaxDescentRate" values="15"/>
-            <field name="Expo" values="40"/>
-            <field name="Deadband" values="30"/>
-        </object>
         <object id="0x84531EBC" name="AnnunciatorSettings">
             <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire"/>
             <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly"/>
         </object>
-        <object id="0x9DB8D0A" name="AttitudeSettings">
+        <object id="0x9CADFEBE" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
             <field name="MagKi" values="9.99999975e-05"/>
             <field name="AccelKp" values="0.0500000007"/>
             <field name="AccelKi" values="9.99999975e-05"/>
             <field name="AccelTau" values="0.100000001"/>
             <field name="VertPositionTau" values="2"/>
-            <field name="YawBiasRate" values="9.99999997e-07"/>
             <field name="BoardRotation" values="29,70,8809"/>
             <field name="ZeroDuringArming" values="TRUE"/>
             <field name="BiasCorrectGyro" values="TRUE"/>
@@ -62,28 +51,6 @@
             <field name="AttitudeFilter" values="0"/>
             <field name="InputFilter" values="0"/>
             <field name="FeedForwardTime" values="0"/>
-        </object>
-        <object id="0x3FCF7F6" name="FixedWingAirspeeds">
-            <field name="AirSpeedMax" values="20"/>
-            <field name="CruiseSpeed" values="15"/>
-            <field name="BestClimbRateSpeed" values="11"/>
-            <field name="StallSpeedClean" values="8"/>
-            <field name="StallSpeedDirty" values="8"/>
-            <field name="VerticalVelMax" values="10"/>
-        </object>
-        <object id="0x56C316DA" name="FixedWingPathFollowerSettings">
-            <field name="HorizontalPosP" values="0.600000024"/>
-            <field name="VerticalPosP" values="0.0500000007"/>
-            <field name="BearingPI" values="0.600000024,0,0"/>
-            <field name="PowerPI" values="1.5,0.150000006,20"/>
-            <field name="VerticalToPitchCrossFeed" values="5,10"/>
-            <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
-            <field name="SpeedPI" values="0.00999999978,0.00999999978,0.800000012"/>
-            <field name="RollLimit" values="-35,0,35"/>
-            <field name="PitchLimit" values="-10,0,10"/>
-            <field name="ThrottleLimit" values="0,0.5,1"/>
-            <field name="OrbitRadius" values="50"/>
-            <field name="UpdatePeriod" values="100"/>
         </object>
         <object id="0x7761C4DA" name="FlightBatterySettings">
             <field name="MaxCellVoltage" values="4.19999981"/>
@@ -112,7 +79,7 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0xCC630B28" name="HwBrain">
+        <object id="0xDC5CAE2E" name="HwBrain">
             <field name="RxPort" values="Disabled"/>
             <field name="MainPort" values="GPS"/>
             <field name="FlxPort" values="HoTT SUMD"/>
@@ -194,8 +161,8 @@
             <field name="Mixer10Type" values="Disabled"/>
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
-        <object id="0xA35EB43E" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Enabled"/>
+        <object id="0x62F6009A" name="ModuleSettings">
+            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="115200"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -796,7 +763,7 @@
             <field name="PALWhite" values="110"/>
             <field name="PALBlack" values="35"/>
             <field name="NTSCWhite" values="100"/>
-            <field name="NTSCBlack" values="20"/>
+            <field name="NTSCBlack" values="35"/>
             <field name="XOffset" values="0"/>
             <field name="YOffset" values="0"/>
             <field name="NumPages" values="3"/>
@@ -811,18 +778,8 @@
             <field name="ThreeDMode" values="Disabled"/>
             <field name="ThreeDRightEyeXShift" values="30"/>
         </object>
-        <object id="0x77A9E8F0" name="PathPlannerSettings">
+        <object id="0xF3729976" name="PathPlannerSettings">
             <field name="PreprogrammedPath" values="NONE"/>
-            <field name="FlashOperation" values="NONE"/>
-        </object>
-        <object id="0x6473EA06" name="PicoCSettings">
-            <field name="MaxFileSize" values="2048"/>
-            <field name="TaskStackSize" values="16384"/>
-            <field name="PicoCStackSize" values="16384"/>
-            <field name="BootFileID" values="0"/>
-            <field name="Startup" values="Disabled"/>
-            <field name="Source" values="Disabled"/>
-            <field name="ComSpeed" values="115200"/>
         </object>
         <object id="0xF511BE26" name="SensorSettings">
             <field name="AccelBias" values="0.0154516567,-0.238445953,0.51732409"/>
@@ -836,7 +793,7 @@
             <field name="ZAccelOffset" values="0"/>
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
-        <object id="0x84DE69E2" name="StabilizationSettings">
+        <object id="0x13D3D856" name="StabilizationSettings">
             <field name="ManualRate" values="900,900,225"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
@@ -846,11 +803,6 @@
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
-            <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
-            <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
-            <field name="VbarPitchPID" values="0.00499999989,0.00200000009,0"/>
-            <field name="VbarYawPID" values="0.00499999989,0.00200000009,0"/>
-            <field name="VbarTau" values="0.5"/>
             <field name="GyroCutoff" values="55"/>
             <field name="DerivativeGamma" values="1"/>
             <field name="WeakLevelingKp" values="0.330000013"/>
@@ -864,9 +816,6 @@
             <field name="RateExpo" values="80,80,22"/>
             <field name="RateExponent" values="30,30,30"/>
             <field name="HorizonExpo" values="30,30,30"/>
-            <field name="VbarGyroSuppress" values="30"/>
-            <field name="VbarPiroComp" values="FALSE"/>
-            <field name="VbarMaxAngle" values="10"/>
             <field name="DerivativeCutoff" values="20"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
@@ -915,6 +864,16 @@
             <field name="Band_5G8_E_Frequency" values="CH 1 5705"/>
             <field name="Airwave_Frequency" values="CH 1 5740"/>
             <field name="Raceband_Frequency" values="CH 1 5658"/>
+        </object>
+        <object id="0x3B75868" name="VbarSettings">
+            <field name="VbarSensitivity" values="0.5,0.5,0.5"/>
+            <field name="VbarRollPID" values="0.00499999989,0.00200000009,0"/>
+            <field name="VbarPitchPID" values="0.00499999989,0.00200000009,0"/>
+            <field name="VbarYawPID" values="0.00499999989,0.00200000009,0"/>
+            <field name="VbarTau" values="0.5"/>
+            <field name="VbarGyroSuppress" values="30"/>
+            <field name="VbarPiroComp" values="FALSE"/>
+            <field name="VbarMaxAngle" values="10"/>
         </object>
     </settings>
 </uavobjects>

@@ -7,7 +7,7 @@
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
             <field name="LowPowerStabilizationMaxPowerAdd" values="0.0700000003"/>
-            <field name="LowPowerStabilizationMaxTime" values="4"/>
+            <field name="LowPowerStabilizationMaxTime" values="4.5"/>
             <field name="MotorInputOutputCurveFit" values="0.769999981"/>
             <field name="TimerUpdateFreq" values="0,50,50,50,0,0"/>
             <field name="ChannelMax" values="250,250,250,250,0,0,0,0,0,0"/>
@@ -764,7 +764,7 @@
             <field name="PALWhite" values="110"/>
             <field name="PALBlack" values="35"/>
             <field name="NTSCWhite" values="110"/>
-            <field name="NTSCBlack" values="20"/>
+            <field name="NTSCBlack" values="27"/>
             <field name="XOffset" values="0"/>
             <field name="YOffset" values="0"/>
             <field name="NumPages" values="3"/>
@@ -772,7 +772,7 @@
             <field name="PageConfig" values="Custom1,Custom2,Menu,Custom1,Custom1,Custom1"/>
             <field name="DisableMenuWhenArmed" values="Enabled"/>
             <field name="RssiWarnThreshold" values="50"/>
-            <field name="CustomText" values="75,71,54,72,87,70,0,0,0,0"/>
+            <field name="CustomText" values="75,71,54,72,87,70,32,32,32,32"/>
             <field name="StatsDisplayDuration" values="20s"/>
             <field name="PALXScale" values="7"/>
             <field name="NTSCXScale" values="8"/>
@@ -795,7 +795,7 @@
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
         <object id="0x13D3D856" name="StabilizationSettings">
-            <field name="ManualRate" values="900,900,900"/>
+            <field name="ManualRate" values="900,900,720"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
             <field name="RollRatePID" values="0.00234999997,0.0137299998,2.59999997e-05,0.300000012"/>
@@ -814,8 +814,8 @@
             <field name="RollMax" values="55"/>
             <field name="PitchMax" values="55"/>
             <field name="YawMax" values="35"/>
-            <field name="RateExpo" values="77,77,77"/>
-            <field name="RateExponent" values="30,30,30"/>
+            <field name="RateExpo" values="80,80,65"/>
+            <field name="RateExponent" values="77,77,40"/>
             <field name="HorizonExpo" values="30,30,30"/>
             <field name="DerivativeCutoff" values="38"/>
             <field name="MaxAxisLock" values="15"/>

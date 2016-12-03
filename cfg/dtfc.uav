@@ -56,18 +56,6 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0xE4BF2076" name="HwDtfc">
-            <field name="RcvrPort" values="S.Bus"/>
-            <field name="Uart1" values="MSP"/>
-            <field name="Uart2" values="Disabled"/>
-            <field name="USB_HIDPort" values="USBTelemetry"/>
-            <field name="USB_VCPPort" values="Disabled"/>
-            <field name="DSMxMode" values="Autodetect"/>
-            <field name="GyroRange" values="2000"/>
-            <field name="AccelRange" values="8G"/>
-            <field name="ICM20608G_GyroLPF" values="176"/>
-            <field name="ICM20608G_AccelLPF" values="99"/>
-        </object>
         <object id="0xA6D4F2A2" name="LoggingSettings">
             <field name="LogBehavior" values="LogOnArm"/>
             <field name="InitiallyLog" values="AllObjects"/>
@@ -175,8 +163,8 @@
             <field name="RollMax" values="55"/>
             <field name="PitchMax" values="55"/>
             <field name="YawMax" values="35"/>
-            <field name="RateExpo" values="83,83,79"/>
-            <field name="RateExponent" values="77,77,59"/>
+            <field name="RateExpo" values="80,80,75"/>
+            <field name="RateExponent" values="75,75,58"/>
             <field name="HorizonExpo" values="50,50,50"/>
             <field name="DerivativeCutoff" values="32"/>
             <field name="MaxAxisLock" values="15"/>

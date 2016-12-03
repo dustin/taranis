@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="48001e001651343435383538" type="8b"/>
-        <firmware date="20161115 14:41" hash="9e3970c1" tag="next"/>
-        <gcs date="20161115" hash="9e3970c1" tag="next"/>
+        <firmware date="20161202 04:48" hash="39507d1a" tag="next"/>
+        <gcs date="20161202" hash="39507d1a" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -16,9 +16,9 @@
             <field name="ChannelType" values="PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM,PWM"/>
             <field name="MotorsSpinWhileArmed" values="TRUE"/>
         </object>
-        <object id="0x84531EBC" name="AnnunciatorSettings">
-            <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire"/>
-            <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly"/>
+        <object id="0x3DE22DCC" name="AnnunciatorSettings">
+            <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire,Warning"/>
+            <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly,HairOnFire"/>
         </object>
         <object id="0x9CADFEBE" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
@@ -111,7 +111,7 @@
             <field name="MaxLogRate" values="25"/>
             <field name="Profile" values="Fullbore"/>
         </object>
-        <object id="0xB1E043B0" name="ManualControlSettings">
+        <object id="0x80F23D5C" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="2000"/>
             <field name="RssiMin" values="1000"/>
@@ -138,7 +138,7 @@
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
-            <field name="ThrottleCurve1" values="0,0.0799999982,0.170000002,0.50999999,0.899999976"/>
+            <field name="ThrottleCurve1" values="0,0.0900000036,0.189999998,0.466587275,0.899999976"/>
             <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
             <field name="Curve2Source" values="Throttle"/>
             <field name="Mixer1Type" values="Motor"/>
@@ -794,21 +794,23 @@
             <field name="ZAccelOffset" values="0"/>
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
-        <object id="0x13D3D856" name="StabilizationSettings">
+        <object id="0x5420B8F8" name="StabilizationSettings">
             <field name="ManualRate" values="900,900,720"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00234999997,0.0137299998,2.59999997e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00294000003,0.0171799995,3.30000003e-05,0.300000012"/>
+            <field name="RollRatePID" values="0.00246696128,0.00967587531,3.20897925e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00366292591,0.0143666677,4.76466848e-05,0.300000012"/>
             <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
-            <field name="RollPI" values="10.7460003,8.37100029,50"/>
-            <field name="PitchPI" values="10.7460003,8.37100029,50"/>
+            <field name="RollPI" values="6.63351345,0,50"/>
+            <field name="PitchPI" values="6.63351345,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="GyroCutoff" values="55"/>
             <field name="DerivativeGamma" values="1"/>
             <field name="WeakLevelingKp" values="0.330000013"/>
             <field name="CoordinatedFlightYawPI" values="0,0.100000001,0.5"/>
             <field name="AcroInsanityFactor" values="40"/>
+            <field name="AcroZeroIntegralGyro" values="150"/>
+            <field name="AcroZeroIntegralStick" values="20"/>
             <field name="CameraTilt" values="0"/>
             <field name="MaxLevelAngle" values="55,55,35"/>
             <field name="RollMax" values="55"/>
@@ -817,7 +819,7 @@
             <field name="RateExpo" values="80,80,65"/>
             <field name="RateExponent" values="77,77,40"/>
             <field name="HorizonExpo" values="30,30,30"/>
-            <field name="DerivativeCutoff" values="38"/>
+            <field name="DerivativeCutoff" values="24"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="45"/>
@@ -833,15 +835,14 @@
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
         </object>
-        <object id="0xB2A62596" name="SystemIdent">
-            <field name="Tau" values="-4.17843676"/>
-            <field name="Beta" values="10.1114483,9.88727951,9.78006172"/>
-            <field name="Bias" values="-0.00094023929,-0.00612246757,-0.00482806144"/>
-            <field name="Noise" values="11.0578527,12.7541943,9.13315392"/>
-            <field name="Period" values="0"/>
-            <field name="NumAfPredicts" values="97231"/>
+        <object id="0xDFD16382" name="SystemIdent">
+            <field name="Tau" values="-3.95077324"/>
+            <field name="Beta" values="9.53970242,9.1444273,8.88197899"/>
+            <field name="Bias" values="-0.00810105912,-0.00572930183,0.000751208514"/>
+            <field name="Noise" values="37.7276878,56.2077904,24.0424442"/>
+            <field name="NumAfPredicts" values="95232"/>
             <field name="NumSpilledPts" values="0"/>
-            <field name="HoverThrottle" values="0.17459999"/>
+            <field name="HoverThrottle" values="0.19129999"/>
             <field name="NewTune" values="FALSE"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">

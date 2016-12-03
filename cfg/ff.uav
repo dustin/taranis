@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="560035000151343235353635" type="8a"/>
-        <firmware date="20161115 14:41" hash="9e3970c1" tag="next"/>
-        <gcs date="20161115" hash="9e3970c1" tag="next"/>
+        <firmware date="20161202 04:48" hash="39507d1a" tag="next"/>
+        <gcs date="20161202" hash="39507d1a" tag="next"/>
     </version>
     <settings>
         <object id="0x78BEB756" name="ActuatorSettings">
@@ -33,9 +33,9 @@
             <field name="Expo" values="40"/>
             <field name="Deadband" values="30"/>
         </object>
-        <object id="0x84531EBC" name="AnnunciatorSettings">
-            <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire"/>
-            <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly"/>
+        <object id="0x3DE22DCC" name="AnnunciatorSettings">
+            <field name="AnnunciateAnytime" values="OK,Warning,HairOnFire,Warning"/>
+            <field name="AnnunciateAfterArming" values="HairOnFire,HairOnFire,ManualControlOnly,HairOnFire"/>
         </object>
         <object id="0x9CADFEBE" name="AttitudeSettings">
             <field name="MagKp" values="0.0500000007"/>
@@ -89,7 +89,7 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0xDC5CAE2E" name="HwBrain">
+        <object id="0x9A43A70E" name="HwBrain">
             <field name="RxPort" values="PPM"/>
             <field name="MainPort" values="Disabled"/>
             <field name="FlxPort" values="Disabled"/>
@@ -99,7 +99,6 @@
             <field name="DSMxMode" values="Autodetect"/>
             <field name="GyroFullScale" values="2000"/>
             <field name="AccelFullScale" values="8G"/>
-            <field name="MPU9250Rate" values="1000"/>
             <field name="MPU9250GyroLPF" values="184"/>
             <field name="MPU9250AccelLPF" values="184"/>
             <field name="Magnetometer" values="Internal"/>
@@ -120,7 +119,7 @@
             <field name="MaxLogRate" values="50"/>
             <field name="Profile" values="Fullbore"/>
         </object>
-        <object id="0xB1E043B0" name="ManualControlSettings">
+        <object id="0x80F23D5C" name="ManualControlSettings">
             <field name="Deadband" values="0.00199999986"/>
             <field name="RssiMax" values="1900"/>
             <field name="RssiMin" values="1000"/>
@@ -147,7 +146,7 @@
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x4E485B94" name="MixerSettings">
-            <field name="ThrottleCurve1" values="0,0.150000006,0.319999993,0.519999981,0.899999976"/>
+            <field name="ThrottleCurve1" values="0,0.0799999982,0.170000002,0.40403527,0.899999976"/>
             <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
             <field name="Curve2Source" values="Throttle"/>
             <field name="Mixer1Type" values="Motor"/>
@@ -803,21 +802,23 @@
             <field name="ZAccelOffset" values="0.0113883242"/>
             <field name="TolerateMissingSensors" values="FALSE"/>
         </object>
-        <object id="0x13D3D856" name="StabilizationSettings">
+        <object id="0x5420B8F8" name="StabilizationSettings">
             <field name="ManualRate" values="900,900,720"/>
             <field name="MaximumRate" values="300,300,300"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.00200000009,0.00827000011,3.19999999e-05,0.300000012"/>
-            <field name="PitchRatePID" values="0.00283999997,0.0117699997,4.6000001e-05,0.300000012"/>
-            <field name="YawRatePID" values="0.0027699999,0.0092000002,3.60000013e-05,0.300000012"/>
-            <field name="RollPI" values="7.6170001,4.07700014,50"/>
-            <field name="PitchPI" values="7.6170001,4.07700014,50"/>
+            <field name="RollRatePID" values="0.00298330677,0.0120822052,4.45636833e-05,0.300000012"/>
+            <field name="PitchRatePID" values="0.00314572453,0.0127399871,4.69898296e-05,0.300000012"/>
+            <field name="YawRatePID" values="0.00350000011,0.00350000011,0,0.300000012"/>
+            <field name="RollPI" values="6.67811728,0,50"/>
+            <field name="PitchPI" values="6.67811728,0,50"/>
             <field name="YawPI" values="2.5,0,50"/>
             <field name="GyroCutoff" values="55"/>
             <field name="DerivativeGamma" values="1"/>
             <field name="WeakLevelingKp" values="0.330000013"/>
             <field name="CoordinatedFlightYawPI" values="0,0.100000001,0.5"/>
             <field name="AcroInsanityFactor" values="40"/>
+            <field name="AcroZeroIntegralGyro" values="150"/>
+            <field name="AcroZeroIntegralStick" values="20"/>
             <field name="CameraTilt" values="0"/>
             <field name="MaxLevelAngle" values="55,55,35"/>
             <field name="RollMax" values="55"/>
@@ -826,7 +827,7 @@
             <field name="RateExpo" values="80,80,75"/>
             <field name="RateExponent" values="77,77,77"/>
             <field name="HorizonExpo" values="30,30,30"/>
-            <field name="DerivativeCutoff" values="27"/>
+            <field name="DerivativeCutoff" values="26"/>
             <field name="MaxAxisLock" values="15"/>
             <field name="MaxAxisLockRate" values="2"/>
             <field name="MaxWeakLevelingRate" values="45"/>
@@ -842,15 +843,14 @@
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
         </object>
-        <object id="0xB2A62596" name="SystemIdent">
-            <field name="Tau" values="-3.80473375"/>
-            <field name="Beta" values="9.9514637,9.59850597,9.63689423"/>
-            <field name="Bias" values="0.00206790701,0.00855439994,0.00479212869"/>
-            <field name="Noise" values="13.8909712,19.7766495,3.40652084"/>
-            <field name="Period" values="0"/>
-            <field name="NumAfPredicts" values="59670"/>
+        <object id="0xDFD16382" name="SystemIdent">
+            <field name="Tau" values="-3.86819983"/>
+            <field name="Beta" values="9.46256638,9.40955448,9.7353363"/>
+            <field name="Bias" values="0.0025985071,0.000919866026,-0.00623388169"/>
+            <field name="Noise" values="112.062981,29.3568249,2.45127368"/>
+            <field name="NumAfPredicts" values="59904"/>
             <field name="NumSpilledPts" values="0"/>
-            <field name="HoverThrottle" values="0.317399979"/>
+            <field name="HoverThrottle" values="0.165999994"/>
             <field name="NewTune" values="FALSE"/>
         </object>
         <object id="0x6F3BB6B0" name="SystemSettings">

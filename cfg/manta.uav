@@ -861,7 +861,7 @@
             <field name="DeadbandSlope" values="60,60,50"/>
         </object>
         <object id="0xBA09F7C2" name="StateEstimation">
-            <field name="AttitudeFilter" values="INSOutdoor"/>
+            <field name="AttitudeFilter" values="Complementary"/>
             <field name="NavigationFilter" values="INS"/>
         </object>
         <object id="0x2DD579BE" name="SubTrimSettings">

@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="38001b001851353438363037" type="a1"/>
-        <firmware date="20170330 20:29" hash="6e1d627a" tag="next"/>
-        <gcs date="20170330" hash="6e1d627a" tag="next"/>
+        <firmware date="20170506 16:00" hash="be4b97e8" tag="next"/>
+        <gcs date="20170506" hash="be4b97e8" tag="next"/>
     </version>
     <settings>
         <object id="0x53F09AA6" name="ActuatorSettings">
@@ -63,6 +63,28 @@
         </object>
         <object id="0xC2F39D32" name="DACSettings">
             <field name="DACPrimaryUse" values="Disabled"/>
+        </object>
+        <object id="0x3FCF7F6" name="FixedWingAirspeeds">
+            <field name="AirSpeedMax" values="20"/>
+            <field name="CruiseSpeed" values="15"/>
+            <field name="BestClimbRateSpeed" values="11"/>
+            <field name="StallSpeedClean" values="8"/>
+            <field name="StallSpeedDirty" values="8"/>
+            <field name="VerticalVelMax" values="10"/>
+        </object>
+        <object id="0x56C316DA" name="FixedWingPathFollowerSettings">
+            <field name="HorizontalPosP" values="0.6000000238418579"/>
+            <field name="VerticalPosP" values="0.05000000074505806"/>
+            <field name="BearingPI" values="0.6000000238418579,0,0"/>
+            <field name="PowerPI" values="1.5,0.15000000596046448,20"/>
+            <field name="VerticalToPitchCrossFeed" values="5,10"/>
+            <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
+            <field name="SpeedPI" values="0.009999999776482582,0.009999999776482582,0.800000011920929"/>
+            <field name="RollLimit" values="-35,0,35"/>
+            <field name="PitchLimit" values="-10,0,10"/>
+            <field name="ThrottleLimit" values="0,0.5,1"/>
+            <field name="OrbitRadius" values="50"/>
+            <field name="UpdatePeriod" values="100"/>
         </object>
         <object id="0x7761C4DA" name="FlightBatterySettings">
             <field name="MaxCellVoltage" values="4.199999809265137"/>
@@ -136,14 +158,14 @@
             <field name="Arming" values="Switch+Throttle+Delay"/>
             <field name="ArmTime" values="500"/>
             <field name="DisarmTime" values="1000"/>
-            <field name="Stabilization1Settings" values="Attitude,Attitude,Rate"/>
+            <field name="Stabilization1Settings" values="Attitude,Rate,Rate"/>
             <field name="Stabilization2Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization3Settings" values="Attitude,Attitude,Rate"/>
             <field name="Stabilization1Reprojection" values="None"/>
             <field name="Stabilization2Reprojection" values="None"/>
             <field name="Stabilization3Reprojection" values="None"/>
             <field name="FlightModeNumber" values="5"/>
-            <field name="FlightModePosition" values="Manual,Acro,Leveling,Acro,Acro,Acro"/>
+            <field name="FlightModePosition" values="Manual,Acro,Stabilized1,PositionHold,Acro,Acro"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
         <object id="0x70E17BD8" name="MixerSettings">
@@ -172,7 +194,7 @@
             <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object id="0xFECECBDC" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Disabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="AdminState" values="Disabled,Enabled,Disabled,Enabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="115200"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -824,7 +846,7 @@
             <field name="TolerateMissingSensors" values="FALSE"/>
             <field name="LowpassOrder" values="1"/>
         </object>
-        <object id="0x2C676DD8" name="StabilizationSettings">
+        <object id="0x71CD7A94" name="StabilizationSettings">
             <field name="ManualRate" values="900,720,225"/>
             <field name="AcroDynamicRate" values="0,0,0"/>
             <field name="AcroDynamicTau" values="0.22499999403953552"/>
@@ -859,6 +881,7 @@
             <field name="LowThrottleZeroIntegral" values="TRUE"/>
             <field name="DeadbandWidth" values="0,0,0"/>
             <field name="DeadbandSlope" values="60,60,50"/>
+            <field name="RCControlSmoothing" values="None,None"/>
         </object>
         <object id="0xBA09F7C2" name="StateEstimation">
             <field name="AttitudeFilter" values="Complementary"/>

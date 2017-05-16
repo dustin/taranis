@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="38001b001851353438363037" type="a1"/>
-        <firmware date="20170506 16:00" hash="be4b97e8" tag="next"/>
-        <gcs date="20170506" hash="be4b97e8" tag="next"/>
+        <firmware date="20170510 18:52" hash="95ef20a5" tag="next"/>
+        <gcs date="20170510" hash="95ef20a5" tag="next"/>
     </version>
     <settings>
         <object id="0x53F09AA6" name="ActuatorSettings">
@@ -10,9 +10,9 @@
             <field name="LowPowerStabilizationMaxTime" values="0"/>
             <field name="MotorInputOutputCurveFit" values="0.8999999761581421"/>
             <field name="TimerUpdateFreq" values="50,50,50,50,0,0"/>
-            <field name="ChannelMax" values="2000,1600,1400,0,0,0,0,0,0,0"/>
-            <field name="ChannelNeutral" values="1000,1501,1500,0,0,0,0,0,0,0"/>
-            <field name="ChannelMin" values="1000,1400,1600,0,0,0,0,0,0,0"/>
+            <field name="ChannelMax" values="2000,1800,1400,0,0,0,0,0,0,0"/>
+            <field name="ChannelNeutral" values="1000,1498,1675,0,0,0,0,0,0,0"/>
+            <field name="ChannelMin" values="1000,1100,2000,0,0,0,0,0,0,0"/>
             <field name="MotorsSpinWhileArmed" values="FALSE"/>
         </object>
         <object id="0x63F679C" name="AirspeedSettings">
@@ -113,13 +113,13 @@
             <field name="SeaLevelPressure" values="1013"/>
             <field name="Set" values="FALSE"/>
         </object>
-        <object id="0x72FD8574" name="HwSeppuku">
-            <field name="RcvrPort" values="HoTT SUMD"/>
+        <object id="0x190CA298" name="HwSeppuku">
+            <field name="RcvrPort" values="Disabled"/>
             <field name="Uart1" values="Disabled"/>
             <field name="Uart6" values="GPS"/>
             <field name="Uart3" values="Disabled"/>
-            <field name="OutputConfiguration" values="EightChannels"/>
-            <field name="Uart4" values="Disabled"/>
+            <field name="OutputConfiguration" values="SixChannels+UART4"/>
+            <field name="Uart4" values="TBS Crossfire"/>
             <field name="USB_HIDPort" values="USBTelemetry"/>
             <field name="USB_VCPPort" values="Disabled"/>
             <field name="DSMxMode" values="Autodetect"/>
@@ -144,15 +144,15 @@
         </object>
         <object id="0x34BB1684" name="ManualControlSettings">
             <field name="Deadband" values="0.003000000026077032"/>
-            <field name="RssiMax" values="16128"/>
-            <field name="RssiMin" values="7272"/>
-            <field name="ChannelMin" values="7872,7872,16128,7872,7872,0,7872,7872,0,7872"/>
-            <field name="ChannelNeutral" values="8037,11952,12088,12008,12000,-1,12000,11992,-1,8132"/>
-            <field name="ChannelMax" values="16128,16128,7872,16128,16128,0,16128,16128,0,16128"/>
+            <field name="RssiMax" values="1809"/>
+            <field name="RssiMin" values="172"/>
+            <field name="ChannelMin" values="172,172,1809,172,172,0,172,172,172,172"/>
+            <field name="ChannelNeutral" values="204,992,992,992,992,-1,992,992,992,215"/>
+            <field name="ChannelMax" values="1809,1809,172,1809,1809,0,1809,1809,1809,1809"/>
             <field name="ArmedTimeout" values="0"/>
             <field name="InvalidRXArmedTimeout" values="5000"/>
-            <field name="ChannelGroups" values="HoTT SUM,HoTT SUM,HoTT SUM,HoTT SUM,HoTT SUM,None,HoTT SUM,None,None,HoTT SUM"/>
-            <field name="RssiType" values="HoTT SUM"/>
+            <field name="ChannelGroups" values="TBS Crossfire,TBS Crossfire,TBS Crossfire,TBS Crossfire,TBS Crossfire,None,TBS Crossfire,None,None,TBS Crossfire"/>
+            <field name="RssiType" values="TBS Crossfire"/>
             <field name="RssiChannelNumber" values="8"/>
             <field name="ChannelNumber" values="1,3,2,4,5,0,6,0,0,5"/>
             <field name="Arming" values="Switch+Throttle+Delay"/>
@@ -168,33 +168,33 @@
             <field name="FlightModePosition" values="Manual,Acro,Stabilized1,PositionHold,Acro,Acro"/>
             <field name="ArmTimeoutAutonomous" values="ENABLED"/>
         </object>
-        <object id="0x70E17BD8" name="MixerSettings">
-            <field name="ThrottleCurve1" values="0,0.25,0.5,0.75,1"/>
+        <object id="0xB10027D6" name="MixerSettings">
+            <field name="ThrottleCurve1" values="0,0,0,0,0"/>
             <field name="ThrottleCurve2" values="0,0.25,0.5,0.75,1"/>
+            <field name="Mixer1Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer2Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer3Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer4Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer5Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer6Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer7Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer8Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer9Vector" values="0,0,0,0,0,0,0,0"/>
+            <field name="Mixer10Vector" values="0,0,0,0,0,0,0,0"/>
             <field name="Curve2Source" values="Throttle"/>
-            <field name="Mixer1Type" values="Motor"/>
-            <field name="Mixer1Vector" values="127,0,0,0,0"/>
-            <field name="Mixer2Type" values="Servo"/>
-            <field name="Mixer2Vector" values="0,0,-127,127,0"/>
-            <field name="Mixer3Type" values="Servo"/>
-            <field name="Mixer3Vector" values="0,0,127,127,0"/>
+            <field name="Mixer1Type" values="Disabled"/>
+            <field name="Mixer2Type" values="Disabled"/>
+            <field name="Mixer3Type" values="Disabled"/>
             <field name="Mixer4Type" values="Disabled"/>
-            <field name="Mixer4Vector" values="0,0,0,0,0"/>
             <field name="Mixer5Type" values="Disabled"/>
-            <field name="Mixer5Vector" values="0,0,0,0,0"/>
             <field name="Mixer6Type" values="Disabled"/>
-            <field name="Mixer6Vector" values="0,0,0,0,0"/>
             <field name="Mixer7Type" values="Disabled"/>
-            <field name="Mixer7Vector" values="0,0,0,0,0"/>
             <field name="Mixer8Type" values="Disabled"/>
-            <field name="Mixer8Vector" values="0,0,0,0,0"/>
             <field name="Mixer9Type" values="Disabled"/>
-            <field name="Mixer9Vector" values="0,0,0,0,0"/>
             <field name="Mixer10Type" values="Disabled"/>
-            <field name="Mixer10Vector" values="0,0,0,0,0"/>
         </object>
         <object id="0xFECECBDC" name="ModuleSettings">
-            <field name="AdminState" values="Disabled,Enabled,Disabled,Enabled,Disabled,Enabled,Disabled,Enabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
+            <field name="AdminState" values="Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled,Disabled"/>
             <field name="TelemetrySpeed" values="115200"/>
             <field name="GPSSpeed" values="57600"/>
             <field name="GPSDataProtocol" values="UBX"/>
@@ -356,46 +356,46 @@
         </object>
         <object id="0xBACDDE7A" name="OnScreenDisplayPageSettings2">
             <field name="AlarmPosX" values="0"/>
-            <field name="AlarmPosY" values="190"/>
+            <field name="AlarmPosY" values="214"/>
             <field name="AltitudeScalePos" values="350"/>
             <field name="AltitudeNumericPosX" values="280"/>
             <field name="AltitudeNumericPosY" values="200"/>
             <field name="ArmStatusPosX" values="0"/>
-            <field name="ArmStatusPosY" values="32"/>
+            <field name="ArmStatusPosY" values="24"/>
             <field name="BatteryVoltPosX" values="350"/>
-            <field name="BatteryVoltPosY" values="12"/>
+            <field name="BatteryVoltPosY" values="4"/>
             <field name="BatteryCurrentPosX" values="350"/>
-            <field name="BatteryCurrentPosY" values="22"/>
+            <field name="BatteryCurrentPosY" values="14"/>
             <field name="BatteryConsumedPosX" values="350"/>
-            <field name="BatteryConsumedPosY" values="32"/>
+            <field name="BatteryConsumedPosY" values="24"/>
             <field name="BatteryChargeStatePosX" values="325"/>
-            <field name="BatteryChargeStatePosY" values="46"/>
+            <field name="BatteryChargeStatePosY" values="38"/>
             <field name="ClimbRatePosX" values="350"/>
             <field name="ClimbRatePosY" values="200"/>
-            <field name="CompassPos" values="18"/>
+            <field name="CompassPos" values="15"/>
             <field name="CpuPosX" values="0"/>
             <field name="CpuPosY" values="204"/>
-            <field name="CustomTextPosX" values="0"/>
-            <field name="CustomTextPosY" values="222"/>
+            <field name="CustomTextPosX" values="60"/>
+            <field name="CustomTextPosY" values="190"/>
             <field name="FlightModePosX" values="0"/>
-            <field name="FlightModePosY" values="12"/>
+            <field name="FlightModePosY" values="4"/>
             <field name="GForcePosX" values="10"/>
             <field name="GForcePosY" values="40"/>
-            <field name="GpsStatusPosX" values="55"/>
-            <field name="GpsStatusPosY" values="226"/>
-            <field name="GpsLatPosX" values="140"/>
-            <field name="GpsLatPosY" values="222"/>
-            <field name="GpsLonPosX" values="290"/>
-            <field name="GpsLonPosY" values="222"/>
+            <field name="GpsStatusPosX" values="0"/>
+            <field name="GpsStatusPosY" values="230"/>
+            <field name="GpsLatPosX" values="200"/>
+            <field name="GpsLatPosY" values="230"/>
+            <field name="GpsLonPosX" values="350"/>
+            <field name="GpsLonPosY" values="230"/>
             <field name="GpsMgrsPosX" values="350"/>
             <field name="GpsMgrsPosY" values="230"/>
             <field name="HomeDistancePosX" values="180"/>
             <field name="HomeDistancePosY" values="195"/>
-            <field name="HomeArrowPosX" values="175"/>
-            <field name="HomeArrowPosY" values="110"/>
+            <field name="HomeArrowPosX" values="240"/>
+            <field name="HomeArrowPosY" values="195"/>
             <field name="MapWidthMeters" values="2000"/>
             <field name="MapWidthPixels" values="180"/>
-            <field name="MapHeightMeters" values="1800"/>
+            <field name="MapHeightMeters" values="2000"/>
             <field name="MapHeightPixels" values="140"/>
             <field name="RssiPosX" values="130"/>
             <field name="RssiPosY" values="195"/>
@@ -424,8 +424,8 @@
             <field name="ArmStatusFont" values="Small"/>
             <field name="ArmStatusAlign" values="Left"/>
             <field name="ArtificialHorizon" values="Enabled"/>
-            <field name="ArtificialHorizonMaxPitch" values="39"/>
-            <field name="ArtificialHorizonPitchSteps" values="1"/>
+            <field name="ArtificialHorizonMaxPitch" values="30"/>
+            <field name="ArtificialHorizonPitchSteps" values="2"/>
             <field name="BatteryVolt" values="Enabled"/>
             <field name="BatteryVoltFont" values="Small"/>
             <field name="BatteryVoltAlign" values="Right"/>
@@ -436,7 +436,7 @@
             <field name="BatteryConsumedFont" values="Small"/>
             <field name="BatteryConsumedAlign" values="Right"/>
             <field name="BatteryChargeState" values="Enabled"/>
-            <field name="CenterMark" values="Disabled"/>
+            <field name="CenterMark" values="Middle"/>
             <field name="ClimbRate" values="Enabled"/>
             <field name="ClimbRateFont" values="Small"/>
             <field name="ClimbRateAlign" values="Right"/>
@@ -445,7 +445,7 @@
             <field name="Cpu" values="Disabled"/>
             <field name="CpuFont" values="Small"/>
             <field name="CpuAlign" values="Left"/>
-            <field name="CustomText" values="Enabled"/>
+            <field name="CustomText" values="Disabled"/>
             <field name="CustomTextFont" values="Small"/>
             <field name="CustomTextAlign" values="Left"/>
             <field name="FlightMode" values="Enabled"/>
@@ -469,10 +469,10 @@
             <field name="HomeDistanceFont" values="Small"/>
             <field name="HomeDistanceShowIcon" values="Enabled"/>
             <field name="HomeArrow" values="Enabled"/>
-            <field name="Map" values="Enabled"/>
+            <field name="Map" values="Disabled"/>
             <field name="MapCenterMode" values="UAV"/>
             <field name="MapShowWp" values="Disabled"/>
-            <field name="MapShowUavHome" values="Disabled"/>
+            <field name="MapShowUavHome" values="Enabled"/>
             <field name="MapShowTablet" values="Disabled"/>
             <field name="Rssi" values="Enabled"/>
             <field name="RssiFont" values="Small"/>
@@ -480,7 +480,7 @@
             <field name="SpeedScale" values="Enabled"/>
             <field name="SpeedScaleAlign" values="Left"/>
             <field name="SpeedScaleSource" values="GPS"/>
-            <field name="SpeedNumeric" values="Disabled"/>
+            <field name="SpeedNumeric" values="Enabled"/>
             <field name="SpeedNumericFont" values="Small"/>
             <field name="SpeedNumericAlign" values="Left"/>
             <field name="SpeedNumericSource" values="GPS"/>
@@ -490,11 +490,11 @@
             <field name="Throttle" values="Disabled"/>
             <field name="ThrottleFont" values="Small"/>
             <field name="ThrottleAlign" values="Right"/>
-            <field name="VTXFreq" values="Disabled"/>
+            <field name="VTXFreq" values="Enabled"/>
             <field name="VTXFreqFont" values="Small"/>
             <field name="VTXFreqAlign" values="Right"/>
             <field name="VTXFreqShowUnit" values="Enabled"/>
-            <field name="VTXPower" values="Disabled"/>
+            <field name="VTXPower" values="Enabled"/>
             <field name="VTXPowerFont" values="Small"/>
             <field name="VTXPowerAlign" values="Right"/>
             <field name="VTXPowerShowUnit" values="Enabled"/>
@@ -847,14 +847,14 @@
             <field name="LowpassOrder" values="1"/>
         </object>
         <object id="0x71CD7A94" name="StabilizationSettings">
-            <field name="ManualRate" values="900,720,225"/>
+            <field name="ManualRate" values="250,250,225"/>
             <field name="AcroDynamicRate" values="0,0,0"/>
             <field name="AcroDynamicTau" values="0.22499999403953552"/>
             <field name="AutotuneActuationEffort" values="0.06499999761581421,0.06499999761581421,0.09000000357627869"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.001500000013038516,0.00139999995008111,0,0.30000001192092896"/>
-            <field name="PitchRatePID" values="0.0015000003622844815,0.0014000000664964318,0,0.30000001192092896"/>
+            <field name="RollRatePID" values="0.0020000000949949026,0.001500000013038516,0,0.30000001192092896"/>
+            <field name="PitchRatePID" values="0.0020000000949949026,0.001500000013038516,0,0.30000001192092896"/>
             <field name="YawRatePID" values="0.0035000001080334187,0.0035000001080334187,0,0.30000001192092896"/>
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
@@ -871,8 +871,8 @@
             <field name="PitchMax" values="55"/>
             <field name="YawMax" values="35"/>
             <field name="AcroDynamicTransition" values="70,70,70"/>
-            <field name="RateExpo" values="83,79,22"/>
-            <field name="RateExponent" values="75,75,30"/>
+            <field name="RateExpo" values="35,35,30"/>
+            <field name="RateExponent" values="30,30,30"/>
             <field name="HorizonExpo" values="30,30,30"/>
             <field name="DerivativeCutoff" values="20"/>
             <field name="MaxAxisLock" values="15"/>
@@ -885,7 +885,7 @@
         </object>
         <object id="0xBA09F7C2" name="StateEstimation">
             <field name="AttitudeFilter" values="Complementary"/>
-            <field name="NavigationFilter" values="INS"/>
+            <field name="NavigationFilter" values="None"/>
         </object>
         <object id="0x2DD579BE" name="SubTrimSettings">
             <field name="Roll" values="0"/>

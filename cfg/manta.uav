@@ -1,8 +1,8 @@
 <uavobjects>
     <version>
         <hardware revision="1" serial="38001b001851353438363037" type="a1"/>
-        <firmware date="20170523 18:48" hash="31d69f75" tag="next"/>
-        <gcs date="20170523" hash="31d69f75" tag="next"/>
+        <firmware date="20170713 09:08" hash="f4e77fd5" tag="next"/>
+        <gcs date="20170713" hash="f4e77fd5" tag="next"/>
     </version>
     <settings>
         <object id="0x53F09AA6" name="ActuatorSettings">
@@ -39,7 +39,7 @@
         <object id="0x69C052FC" name="AttitudeSettings">
             <field name="MgKp" values="20"/>
             <field name="MgKi" values="0.05000000074505806"/>
-            <field name="AccKp" values="20"/>
+            <field name="AccKp" values="2"/>
             <field name="AccKi" values="0.4000000059604645"/>
             <field name="AccelTau" values="0.10000000149011612"/>
             <field name="VertPositionTau" values="2"/>
@@ -63,6 +63,28 @@
         </object>
         <object id="0xC2F39D32" name="DACSettings">
             <field name="DACPrimaryUse" values="Disabled"/>
+        </object>
+        <object id="0x3FCF7F6" name="FixedWingAirspeeds">
+            <field name="AirSpeedMax" values="20"/>
+            <field name="CruiseSpeed" values="15"/>
+            <field name="BestClimbRateSpeed" values="11"/>
+            <field name="StallSpeedClean" values="8"/>
+            <field name="StallSpeedDirty" values="8"/>
+            <field name="VerticalVelMax" values="10"/>
+        </object>
+        <object id="0x56C316DA" name="FixedWingPathFollowerSettings">
+            <field name="HorizontalPosP" values="0.6000000238418579"/>
+            <field name="VerticalPosP" values="0.05000000074505806"/>
+            <field name="BearingPI" values="0.6000000238418579,0,0"/>
+            <field name="PowerPI" values="1.5,0.15000000596046448,20"/>
+            <field name="VerticalToPitchCrossFeed" values="5,10"/>
+            <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
+            <field name="SpeedPI" values="0.009999999776482582,0.009999999776482582,0.800000011920929"/>
+            <field name="RollLimit" values="-35,0,35"/>
+            <field name="PitchLimit" values="-10,0,10"/>
+            <field name="ThrottleLimit" values="0,0.5,1"/>
+            <field name="OrbitRadius" values="50"/>
+            <field name="UpdatePeriod" values="100"/>
         </object>
         <object id="0x7761C4DA" name="FlightBatterySettings">
             <field name="MaxCellVoltage" values="4.199999809265137"/>
@@ -831,8 +853,8 @@
             <field name="AutotuneActuationEffort" values="0.06499999761581421,0.06499999761581421,0.09000000357627869"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.001000000280328095,0.00139999995008111,0,0.30000001192092896"/>
-            <field name="PitchRatePID" values="0.0010000006295740604,0.0014000000664964318,0,0.30000001192092896"/>
+            <field name="RollRatePID" values="0.0012000001734122634,0.00139999995008111,0,0.30000001192092896"/>
+            <field name="PitchRatePID" values="0.0009000006248243153,0.0014000000664964318,0,0.30000001192092896"/>
             <field name="YawRatePID" values="0.0035000001080334187,0.0035000001080334187,0,0.30000001192092896"/>
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
@@ -846,7 +868,7 @@
             <field name="CameraTilt" values="0"/>
             <field name="MaxLevelAngle" values="55,55,35"/>
             <field name="RollMax" values="55"/>
-            <field name="PitchMax" values="55"/>
+            <field name="PitchMax" values="65"/>
             <field name="YawMax" values="35"/>
             <field name="AcroDynamicTransition" values="70,70,70"/>
             <field name="RateExpo" values="83,79,22"/>
@@ -869,13 +891,8 @@
             <field name="Roll" values="0"/>
             <field name="Pitch" values="0"/>
         </object>
-        <object id="0xDFD16382" name="SystemIdent">
-            <field name="Tau" values="0"/>
-            <field name="Beta" values="0,0,0"/>
-            <field name="Bias" values="0,0,0"/>
-            <field name="Noise" values="0,0,0"/>
+        <object id="0x6DCCF2F0" name="SystemIdent">
             <field name="NumAfPredicts" values="0"/>
-            <field name="NumSpilledPts" values="0"/>
             <field name="HoverThrottle" values="0"/>
             <field name="NewTune" values="FALSE"/>
         </object>

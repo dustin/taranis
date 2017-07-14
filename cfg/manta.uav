@@ -81,7 +81,7 @@
             <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
             <field name="SpeedPI" values="0.009999999776482582,0.009999999776482582,0.800000011920929"/>
             <field name="RollLimit" values="-35,0,35"/>
-            <field name="PitchLimit" values="-10,0,30"/>
+            <field name="PitchLimit" values="-10,0,10"/>
             <field name="ThrottleLimit" values="0.25,0.5,1"/>
             <field name="OrbitRadius" values="50"/>
             <field name="UpdatePeriod" values="100"/>

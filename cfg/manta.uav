@@ -81,8 +81,8 @@
             <field name="AirspeedToVerticalCrossFeed" values="10,100"/>
             <field name="SpeedPI" values="0.009999999776482582,0.009999999776482582,0.800000011920929"/>
             <field name="RollLimit" values="-35,0,35"/>
-            <field name="PitchLimit" values="-10,0,10"/>
-            <field name="ThrottleLimit" values="0,0.5,1"/>
+            <field name="PitchLimit" values="-10,0,30"/>
+            <field name="ThrottleLimit" values="0.25,0.5,1"/>
             <field name="OrbitRadius" values="50"/>
             <field name="UpdatePeriod" values="100"/>
         </object>
@@ -853,8 +853,8 @@
             <field name="AutotuneActuationEffort" values="0.06499999761581421,0.06499999761581421,0.09000000357627869"/>
             <field name="MaximumRate" values="350,350,350"/>
             <field name="PoiMaximumRate" values="30,30,30"/>
-            <field name="RollRatePID" values="0.0012000001734122634,0.00139999995008111,0,0.30000001192092896"/>
-            <field name="PitchRatePID" values="0.0009000006248243153,0.0014000000664964318,0,0.30000001192092896"/>
+            <field name="RollRatePID" values="0.0012000000569969416,0.00139999995008111,0,0.30000001192092896"/>
+            <field name="PitchRatePID" values="0.0008999999845400453,0.00139999995008111,0,0.6000000238418579"/>
             <field name="YawRatePID" values="0.0035000001080334187,0.0035000001080334187,0,0.30000001192092896"/>
             <field name="RollPI" values="2.5,0,50"/>
             <field name="PitchPI" values="2.5,0,50"/>
